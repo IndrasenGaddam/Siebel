@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   COMMENTS="UpgEimCol"
+   NAME="Siebel Repository"
+   UPDATED="06/13/2018 00:05:02"
+   UPDATED_BY="T968113"
+   CREATED="12/18/2017 18:46:26"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="04/06/2022 00:22:30"
+	   NAME="00Phoenix"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="T828770"
+	   UPDATED="04/06/2022 00:22:31"
+	   UPDATED_BY="T828770"
+	   CREATED="04/13/2012 09:08:49"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   EXTERNAL_USE="N"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="EAI JSON Converter"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   UPDATED="12/04/2018 16:04:32"
+		   UPDATED_BY="SADMIN"
+		   CREATED="12/04/2018 16:03:32"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="CreateJSONArray"
+			   UPDATED="02/22/2023 18:06:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/22/2023 18:06:37"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="JSONstr"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/22/2023 18:06:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="pass &quot;InputListNodeString = DUMMY&quot;, if there are no ListArrayNodes in SiebelMsg"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ListOfArrayNodes"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/22/2023 18:06:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="CreateJSONArray"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="02/22/2023 18:06:38"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:38"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="JSONToPropset"
+			   UPDATED="12/04/2018 16:03:40"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:03:40"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="PropsetToJSON"
+			   UPDATED="12/04/2018 16:03:40"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:03:40"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   COMMENTS="[VSTS:2224900: 20feb2023] : Accepts Multiple SiebelMsgs and Create Single JSON Request."
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="SiebelMessageToJSON"
+			   UPDATED="02/22/2023 18:06:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/22/2023 18:06:37"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Error Message"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/22/2023 18:06:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="output = {}"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="JSONstr"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/22/2023 18:06:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="pass &quot;ListOfArrayNodes = DUMMY&quot;, if there are no ListArrayNodes in SiebelMsg"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ListOfArrayNodes"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/22/2023 18:06:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="SiebelMessageToJSON"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="02/22/2023 18:06:38"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/22/2023 18:06:38"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="(declarations)"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here...  
+"
+			   SEQUENCE="1"
+			   UPDATED="12/04/2018 16:04:32"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ConvertJSONtoPS"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ConvertJSONtoPS(Inputs)
+{
+
+	eval(&quot;var temp =&quot; + Inputs.GetValue());
+	
+	var op = TheApplication().NewPropertySet();
+	for (var x in temp)
+	{
+		if(typeof(temp[x]) == &quot;object&quot;){
+			var child = TheApplication().NewPropertySet();
+			child = ObjectToPS(temp[x]);
+			child.SetType(x);
+			op.AddChild(child);
+		}			
+		else op.SetProperty(x,temp[x]);
+	}	
+	return (op);
+}"
+			   SEQUENCE="2"
+			   UPDATED="12/04/2018 16:04:32"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CreateJSON"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CreateJSON(Inputs:PropertySet){
+
+    var str,j;
+    var propName = &quot;&quot;;
+    var propVal = &quot;&quot;;
+    
+    str = &quot;{&quot;;
+    
+    propName = Inputs.GetFirstProperty();    
+    
+    //Type and value
+    if(Inputs.GetValue() != null &amp;&amp; Inputs.GetValue() != &quot;&quot;){
+        str = str + &apos;&quot;&apos; + Inputs.GetType()  + &apos;&quot;&apos; + &quot;:&quot;  + &apos;&quot;&apos; + Inputs.GetValue() + &apos;&quot;&apos;;    
+        if(propName != &quot;&quot;) str= str + &quot;,&quot;;
+    }
+    
+    
+    //Properties
+    while (propName != &quot;&quot;) {
+        propVal = Inputs.GetProperty(propName);
+        str = str + &apos;&quot;&apos; + propName +  &apos;&quot;&apos; + &quot;:&quot; + &apos;&quot;&apos; +propVal + &apos;&quot;&apos;;
+        propName = Inputs.GetNextProperty();
+        if(propName != &quot;&quot;) str = str + &quot;,&quot;;
+        
+    }
+    propName = Inputs.GetFirstProperty();
+    if(propName != &quot;&quot; &amp;&amp; Inputs.GetChildCount()&gt; 0)str = str + &quot;,&quot;;
+    
+    //Loop for child
+    if(Inputs.GetChildCount()&gt; 0){ 
+    if(Inputs.GetChildCount()&gt; 1)str = str + &apos;&quot;Object&quot;&apos; + &quot;:&quot; + &quot;{&quot;;
+    for (var i = 0; i &lt; Inputs.GetChildCount(); i++){
+            j = Inputs.GetChild(i);
+            str = str + &apos;&quot;&apos; + j.GetType() + i + &apos;&quot;&apos; + &quot;:&quot; + CreateJSON(j);// + &quot;,&quot;;
+            if(i+1&lt;Inputs.GetChildCount()) str =str + &quot;,&quot;;
+    }
+    if(Inputs.GetChildCount()&gt; 1)str = str + &quot;}&quot;;
+    }
+    str = str + &quot;}&quot;;
+    return str;    
+}"
+			   SEQUENCE="3"
+			   UPDATED="12/04/2018 16:04:32"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CreateJSONArray"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CreateJSONArray(Inputs, Outputs)
+{
+	// aic  = a means first instance, i means loop counter, c means Child 
+	// ait  = .. t measn type
+	// aitv = .. tv means TypeValue
+	// aitc = .. tc means TypeChildCount
+
+	var OCB = &quot;{&quot;, CCB = &quot;}&quot;, OSB = &quot;[&quot;, CSB = &quot;]&quot;;
+    var i = 0, j = 0, k = 0, m = 0, n = 0, p = 0, q = 0, z=0;
+    var iset = &quot;N&quot;, jset = &quot;N&quot;, kset = &quot;N&quot;, mset = &quot;N&quot;, nset = &quot;N&quot;, pset = &quot;N&quot;, qset = &quot;N&quot;;
+    var icount = 100, jcount = 100, kcount = 100, mcount = 100, ncount = 100, pcount = 100, qcount = 100;
+    var aiOSB = &quot;N&quot;, bjOSB = &quot;N&quot;, ckOSB = &quot;N&quot;, dmOSB = &quot;N&quot;, enOSB = &quot;N&quot;, fpOSB = &quot;N&quot;, gqOSB = &quot;N&quot;;
+  
+    var JSONstr = &quot;{&quot;;
+    var InputNodeString = Inputs.GetProperty(&quot;ListOfArrayNodes&quot;);
+    
+    if (Inputs.GetChildCount() == 0)
+    {
+		Outputs.SetProperty(&quot;Error Message&quot; , &quot;Please provide Siebel Message as input.&quot;);
+       // TheApplication().RaiseErrorText(&quot;Please provide Siebel Message as input.&quot;);
+    }
+    else
+    {
+        var Bodyc = Inputs;
+        var Bodyt = Inputs.GetType();
+        var Bodytv = Inputs.GetValue();
+        var Bodytc = Inputs.GetChildCount();
+        for (i = 0; i &lt; Bodytc; i++)
+        {
+            if (Bodytc &gt; 0)
+            {
+                var aic = Bodyc.GetChild(i);
+                var ait = Bodyc.GetChild(i).GetType();
+                var aitv = Bodyc.GetChild(i).GetValue();
+                var aitc = Bodyc.GetChild(i).GetChildCount();
+                var aiOSBChk = InputNodeString.indexOf(ait);
+                aiOSB = (aiOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+                if (ait != &quot;&quot; &amp;&amp; aitv == &quot;&quot; &amp;&amp; aitc &gt; 0)
+                {
+                    if (aiOSB == &quot;Y&quot; &amp;&amp; iset == &quot;N&quot;)
+                    {
+                        JSONstr += &apos;&quot;&apos; + ait + &apos;&quot;:&apos; + OSB + OCB;
+                        iset = &quot;Y&quot;;
+                        icount = i - 1;
+                        for (z = 0; z &lt; Bodytc; z++)
+                        {
+                            if (Bodyc.GetChild(z).GetType() == ait)
+                                icount = icount + 1;
+                        }
+                    }
+                    else
+                    {
+                        if (iset == &quot;Y&quot;)
+                            JSONstr += OCB;
+                        else
+                            JSONstr += &apos;&quot;&apos; + ait + &apos;&quot;:&apos; + OCB;
+                    }
+                }
+
+                else if ((ait != &quot;&quot; &amp;&amp; aitv != &quot;&quot;) || (ait != &quot;&quot; &amp;&amp; aitv == &quot;&quot; &amp;&amp; aitc == 0))
+                {
+                    JSONstr += &apos;&quot;&apos; + ait + &apos;&quot;:&quot;&apos; + aitv + &apos;&quot;&apos;;
+                    if (i &lt; (Bodytc - 1))
+                        JSONstr += &quot;,&quot;;
+                }
+                //==================				
+                if (aitc &gt; 0)
+                {
+                    for (j = 0; j &lt; aitc; j++)
+                    {
+                        var bjc = aic.GetChild(j);
+                        var bjt = aic.GetChild(j).GetType();
+                        var bjtv = aic.GetChild(j).GetValue();
+                        var bjtc = aic.GetChild(j).GetChildCount();
+                        var bjOSBChk = InputNodeString.indexOf(bjt);
+                        bjOSB = (bjOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+
+                        if (bjt != &quot;&quot; &amp;&amp; bjtv == &quot;&quot; &amp;&amp; bjtc &gt; 0)
+                        {
+                            if (bjOSB == &quot;Y&quot; &amp;&amp; jset == &quot;N&quot;)
+                            {
+                                JSONstr += &apos;&quot;&apos; + bjt + &apos;&quot;:&apos; + OSB + OCB;
+                                jset = &quot;Y&quot;;
+                                jcount = j - 1;
+                                for (z = 0; z &lt; aitc; z++)
+                                {
+                                    if (aic.GetChild(z).GetType() == bjt)
+                                        jcount = jcount + 1;
+                                }
+                            }
+                            else
+                            {
+                                if (jset == &quot;Y&quot;)
+                                    JSONstr += OCB;
+                                else
+                                    JSONstr += &apos;&quot;&apos; + bjt + &apos;&quot;:&apos; + OCB;
+                            }
+                        }
+                        else if (bjt != &quot;&quot; &amp;&amp; bjtv != &quot;&quot;)
+                        {
+                            JSONstr += &apos;&quot;&apos; + bjt + &apos;&quot;:&quot;&apos; + bjtv + &apos;&quot;&apos;;
+                            if (j &lt; (aitc - 1))
+                                JSONstr += &quot;,&quot;;
+                        }
+                        else if (bjt != &quot;&quot; &amp;&amp; bjtv == &quot;&quot; &amp;&amp; bjtc == 0)
+                        {
+                            JSONstr += &apos;&quot;&apos; + bjt + &apos;&quot;:&quot;&apos; + bjtv + &apos;&quot;&apos;;
+                            if (j &lt; (aitc - 1))
+                                JSONstr += &quot;,&quot;;
+                            else
+                            {
+                                if (bjOSB == &quot;Y&quot;)
+                                {
+                                    bjOSB = &quot;N&quot;;
+                                    JSONstr += CSB;
+                                }
+                            }
+                        }
+                        if (bjtc &gt; 0)
+                        {
+                            for (k = 0; k &lt; bjtc; k++)
+                            {
+                                var ckc = bjc.GetChild(k);
+                                var ckt = bjc.GetChild(k).GetType();
+                                var cktv = bjc.GetChild(k).GetValue();
+                                var cktc = bjc.GetChild(k).GetChildCount();
+                                var ckOSBChk = InputNodeString.indexOf(ckt);
+                                ckOSB = (ckOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+                                if (ckt != &quot;&quot; &amp;&amp; cktv == &quot;&quot; &amp;&amp; cktc &gt; 0)
+                                {
+                                    if (ckOSB == &quot;Y&quot; &amp;&amp; kset == &quot;N&quot;)
+                                    {
+                                        JSONstr += &apos;&quot;&apos; + ckt + &apos;&quot;:&apos; + OSB + OCB;
+                                        kset = &quot;Y&quot;;
+                                        kcount = k - 1;
+                                        for (z = 0; z &lt; bjtc; z++)
+                                        {
+                                            if (bjc.GetChild(z).GetType() == ckt)
+                                                kcount = kcount + 1;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (kset == &quot;Y&quot;)
+                                            JSONstr += OCB;
+                                        else
+                                            JSONstr += &apos;&quot;&apos; + ckt + &apos;&quot;:&apos; + OCB;
+                                    }
+                                }
+                                else if ((ckt != &quot;&quot; &amp;&amp; cktv != &quot;&quot;) || (ckt != &quot;&quot; &amp;&amp; cktv == &quot;&quot; &amp;&amp; cktc == 0))
+                                {
+                                    JSONstr += &apos;&quot;&apos; + ckt + &apos;&quot;:&quot;&apos; + cktv + &apos;&quot;&apos;;
+                                    if (k &lt; (bjtc - 1))
+                                        JSONstr += &quot;,&quot;;
+                                }
+                                if (cktc &gt; 0)
+                                {
+                                    //-------------
+                                    for (m = 0; m &lt; cktc; m++)
+                                    {
+                                        var dmc = ckc.GetChild(m);
+                                        var dmt = ckc.GetChild(m).GetType();
+                                        var dmtv = ckc.GetChild(m).GetValue();
+                                        var dmtc = ckc.GetChild(m).GetChildCount();
+                                        var dmOSBChk = InputNodeString.indexOf(dmt);
+                                        dmOSB = (dmOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+                                        if (dmt != &quot;&quot; &amp;&amp; dmtv == &quot;&quot; &amp;&amp; dmtc &gt; 0)
+                                        {
+                                            //JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OCB;
+                                            if (dmOSB == &quot;Y&quot; &amp;&amp; mset == &quot;N&quot;)
+                                            {
+                                                JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OSB + OCB;
+                                                mset = &quot;Y&quot;;
+                                                mcount = m - 1;
+                                                for (z = 0; z &lt; cktc; z++)
+                                                {
+                                                    if (ckc.GetChild(z).GetType() == dmt)
+                                                        mcount = mcount + 1;
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (mset == &quot;Y&quot;)
+                                                    JSONstr += OCB;
+                                                else
+                                                    JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OCB;
+                                            }
+                                        }
+                                        else if ((dmt != &quot;&quot; &amp;&amp; dmtv != &quot;&quot;) || (dmt != &quot;&quot; &amp;&amp; dmtv == &quot;&quot; &amp;&amp; dmtc == 0))
+                                        {
+                                            JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&quot;&apos; + dmtv + &apos;&quot;&apos;;
+                                            if (m &lt; (cktc - 1))
+                                                JSONstr += &quot;,&quot;;
+                                        }
+                                        if (dmtc &gt; 0)
+                                        {
+                                            //-------------
+                                            for (n = 0; n &lt; dmtc; n++)
+                                            {
+                                                var enc = dmc.GetChild(n);
+                                                var ent = dmc.GetChild(n).GetType();
+                                                var entv = dmc.GetChild(n).GetValue();
+                                                var entc = dmc.GetChild(n).GetChildCount();
+
+                                                var enOSBChk = InputNodeString.indexOf(ent);
+                                                enOSB = (enOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+
+                                                if (ent != &quot;&quot; &amp;&amp; entv == &quot;&quot; &amp;&amp; entc &gt; 0)
+                                                {
+                                                    //JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OCB;
+                                                    if (enOSB == &quot;Y&quot; &amp;&amp; nset == &quot;N&quot;)
+                                                    {
+                                                        JSONstr += &apos;&quot;&apos; + ent + &apos;&quot;:&apos; + OSB + OCB;
+                                                        nset = &quot;Y&quot;;
+                                                        ncount = n - 1;
+                                                        for (z = 0; z &lt; dmtc; z++)
+                                                        {
+                                                            if (dmc.GetChild(z).GetType() == ent)
+                                                                ncount = ncount + 1;
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        if (nset == &quot;Y&quot;)
+                                                            JSONstr += OCB;
+                                                        else
+                                                            JSONstr += &apos;&quot;&apos; + ent + &apos;&quot;:&apos; + OCB;
+                                                    }
+                                                }
+                                                else if ((ent != &quot;&quot; &amp;&amp; entv != &quot;&quot;) || (ent != &quot;&quot; &amp;&amp; entv == &quot;&quot; &amp;&amp; entc == 0))
+                                                {
+                                                    JSONstr += &apos;&quot;&apos; + ent + &apos;&quot;:&quot;&apos; + entv + &apos;&quot;&apos;;
+                                                    if (n &lt; (dmtc - 1))
+                                                        JSONstr += &quot;,&quot;;
+                                                }
+                                                if (entc &gt; 0)
+                                                {
+                                                    for ( p = 0; p &lt; entc; p++)
+                                                    {
+                                                        var fpc = enc.GetChild(p);
+                                                        var fpt = enc.GetChild(p).GetType();
+                                                        var fptv = enc.GetChild(p).GetValue();
+                                                        var fptc = enc.GetChild(p).GetChildCount();
+                                                        var fpOSBChk = InputNodeString.indexOf(fpt);
+                                                        fpOSB = (fpOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+                                                        if (fpt != &quot;&quot; &amp;&amp; fptv == &quot;&quot; &amp;&amp; fptc &gt; 0)
+                                                        {
+                                                            //JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OCB;
+                                                            if (fpOSB == &quot;Y&quot; &amp;&amp; pset == &quot;N&quot;)
+                                                            {
+                                                                JSONstr += &apos;&quot;&apos; + fpt + &apos;&quot;:&apos; + OSB + OCB;
+                                                                pset = &quot;Y&quot;;
+                                                                pcount = p - 1;
+                                                                for ( z = 0; z &lt; entc; z++)
+                                                                {
+                                                                    if (enc.GetChild(z).GetType() == fpt)
+                                                                        pcount = pcount + 1;
+                                                                }
+                                                            }
+                                                            else
+                                                            {
+                                                                if (pset == &quot;Y&quot;)
+                                                                    JSONstr += OCB;
+                                                                else
+                                                                    JSONstr += &apos;&quot;&apos; + fpt + &apos;&quot;:&apos; + OCB;
+                                                            }
+                                                        }
+                                                        else if ((fpt != &quot;&quot; &amp;&amp; fptv != &quot;&quot;) || (fpt != &quot;&quot; &amp;&amp; fptv == &quot;&quot; &amp;&amp; fptc == 0))
+                                                        {
+                                                            JSONstr += &apos;&quot;&apos; + fpt + &apos;&quot;:&quot;&apos; + fptv + &apos;&quot;&apos;;
+                                                            if (p &lt; (entc - 1))
+                                                                JSONstr += &quot;,&quot;;
+                                                        }
+                                                        if (fptc &gt; 0)
+                                                        {
+                                                            for (q = 0; q &lt; fptc; q++)
+                                                            {
+                                                                var gqc = fpc.GetChild(q);
+                                                                var gqt = fpc.GetChild(q).GetType();
+                                                                var gqtv = fpc.GetChild(q).GetValue();
+                                                                var gqtc = fpc.GetChild(q).GetChildCount();
+                                                                var gqOSBChk = InputNodeString.indexOf(gqt);
+                                                                gqOSB = (gqOSBChk &gt;= 0) ? &quot;Y&quot; : &quot;N&quot;;
+                                                                if (gqt != &quot;&quot; &amp;&amp; gqtv == &quot;&quot; &amp;&amp; gqtc &gt; 0)
+                                                                {
+                                                                    //JSONstr += &apos;&quot;&apos; + dmt + &apos;&quot;:&apos; + OCB;
+                                                                    if (gqOSB == &quot;Y&quot; &amp;&amp; qset == &quot;N&quot;)
+                                                                    {
+                                                                        JSONstr += &apos;&quot;&apos; + gqt + &apos;&quot;:&apos; + OSB + OCB;
+                                                                        qset = &quot;Y&quot;;
+                                                                        qcount = q - 1;
+                                                                        for (z = 0; z &lt; fptc; z++)
+                                                                        {
+                                                                            if (fpc.GetChild(z).GetType() == gqt)
+                                                                                qcount = qcount + 1;
+                                                                        }
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        if (qset == &quot;Y&quot;)
+                                                                            JSONstr += OCB;
+                                                                        else
+                                                                            JSONstr += &apos;&quot;&apos; + gqt + &apos;&quot;:&apos; + OCB;
+                                                                    }
+                                                                }
+                                                                else if ((gqt != &quot;&quot; &amp;&amp; gqtv != &quot;&quot;) || (gqt != &quot;&quot; &amp;&amp; gqtv == &quot;&quot; &amp;&amp; gqtc == 0))
+                                                                {
+                                                                    JSONstr += &apos;&quot;&apos; + gqt + &apos;&quot;:&quot;&apos; + gqtv + &apos;&quot;&apos;;
+                                                                    if (q &lt; (fptc - 1))
+                                                                        JSONstr += &quot;,&quot;;
+                                                                }
+                                                            }
+
+                                                            JSONstr += CCB;
+                                                            //-------------
+                                                            if (p &lt; (entc - 1) &amp;&amp; pcount != p)
+                                                            {
+                                                                JSONstr += &quot;,&quot;;
+                                                            }
+                                                            if (fpOSB == &quot;Y&quot; &amp;&amp; p == pcount &amp;&amp; pcount != 100)
+                                                            {
+                                                                fpOSB = &quot;N&quot;;
+                                                                JSONstr += CSB;
+                                                                if (p &lt; (entc - 1))
+                                                                {
+                                                                    JSONstr += &quot;,&quot;;
+                                                                }
+                                                                pcount = 100;
+                                                                pset = &quot;N&quot;;
+                                                            }
+                                                        }
+                                                    } // for-P
+                                                    JSONstr += CCB;
+                                                    //-------------
+                                                    if (n &lt; (dmtc - 1) &amp;&amp; ncount != n)
+                                                    {
+                                                        JSONstr += &quot;,&quot;;
+                                                    }
+                                                    if (enOSB == &quot;Y&quot; &amp;&amp; n == ncount &amp;&amp; ncount != 100)
+                                                    {
+                                                        enOSB = &quot;N&quot;;
+                                                        JSONstr += CSB;
+                                                        if (n &lt; (dmtc - 1))
+                                                        {
+                                                            JSONstr += &quot;,&quot;;
+                                                        }
+                                                        ncount = 100;
+                                                        nset = &quot;N&quot;;
+                                                    }
+                                                }
+                                            } // for-N
+                                            JSONstr += CCB;
+                                            //-------------
+                                            if (m &lt; (cktc - 1) &amp;&amp; mcount != m)
+                                            {
+                                                JSONstr += &quot;,&quot;;
+                                            }
+                                            if (dmOSB == &quot;Y&quot; &amp;&amp; m == mcount &amp;&amp; mcount != 100)
+                                            {
+                                                dmOSB = &quot;N&quot;;
+                                                JSONstr += CSB;
+                                                if (m &lt; (cktc - 1))
+                                                {
+                                                    JSONstr += &quot;,&quot;;
+                                                }
+                                                mcount = 100;
+                                                mset = &quot;N&quot;;
+                                            }
+                                        }
+                                    } //for-M
+                                    JSONstr += CCB;
+                                    if (k &lt; (bjtc - 1) &amp;&amp; kcount != k)
+                                    {
+                                        JSONstr += &quot;,&quot;;
+                                    }
+                                    if (ckOSB == &quot;Y&quot; &amp;&amp; k == kcount &amp;&amp; kcount != 100)
+                                    {
+                                        ckOSB = &quot;N&quot;;
+                                        JSONstr += CSB;
+                                        if (k &lt; (bjtc - 1))
+                                        {
+                                            JSONstr += &quot;,&quot;;
+                                        }
+                                        kcount = 100;
+                                        kset = &quot;N&quot;;
+                                    }
+                                }
+                            } //for-K
+                            JSONstr += CCB;
+                            if (j &lt; (aitc - 1) &amp;&amp; jcount != j)
+                            {
+                                JSONstr += &quot;,&quot;;
+                            }
+                            if (bjOSB == &quot;Y&quot; &amp;&amp; j == jcount &amp;&amp; jcount != 100)
+                            {
+                                bjOSB = &quot;N&quot;;
+                                JSONstr += CSB;
+                                if (j &lt; (aitc - 1))
+                                {
+                                    JSONstr += &quot;,&quot;;
+                                }
+                                jcount = 100;
+                                jset = &quot;N&quot;;
+                            }
+                        }
+                    } //for-J
+                    JSONstr += CCB;
+
+                    if (i &lt; (Bodytc - 1) &amp;&amp; icount != i)
+                    {
+                        JSONstr += &quot;,&quot;;
+                    }
+                    if (aiOSB == &quot;Y&quot; &amp;&amp; i == icount &amp;&amp; icount != 100)
+                    {
+                        aiOSB = &quot;N&quot;;
+                        JSONstr += CSB;
+                        if (i &lt; (Bodytc - 1))
+                        {
+                            JSONstr += &quot;,&quot;;
+                        }
+                        icount = 100;
+                        iset = &quot;N&quot;;
+                    }
+                }
+            } //if
+        } //for-i
+        JSONstr += CCB;
+        Outputs.SetProperty(&quot;JSONstr&quot;, JSONstr);
+    }
+}"
+			   SEQUENCE="4"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/22/2023 18:06:47"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ObjectToPS"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ObjectToPS(obj){
+
+
+	var op = TheApplication().NewPropertySet();
+	for (var x in obj)
+	{
+		if(typeof(obj[x]) == &quot;object&quot;){
+			var child = TheApplication().NewPropertySet();
+			child = ObjectToPS(obj[x]);
+			child.SetType(x);
+			op.AddChild(child);
+		}			
+		else op.SetProperty(x,obj[x]);
+	}	
+	return (op);
+}"
+			   SEQUENCE="5"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_InvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_InvokeMethod (MethodName, Inputs, Outputs)
+{
+
+}"
+			   SEQUENCE="7"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreCanInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreCanInvokeMethod (MethodName, &amp;CanInvoke)
+{
+	return (ContinueOperation);
+}"
+			   SEQUENCE="8"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs, Outputs)
+{
+	if(MethodName == &quot;PropsetToJSON&quot;){
+		Outputs.SetValue(CreateJSON(Inputs));
+		return (CancelOperation);
+	}
+	if(MethodName == &quot;JSONToPropset&quot;){
+		Outputs.AddChild(ConvertJSONtoPS(Inputs));
+		return (CancelOperation);
+	}
+
+	if(MethodName == &quot;SiebelMessageToJSON&quot;)		//Custom Function
+	{
+		SiebelMessageToJSON(Inputs, Outputs);
+		return (CancelOperation);
+	}
+	if(MethodName == &quot;CreateJSONArray&quot;)			//Custom Function
+	{
+		CreateJSONArray(Inputs, Outputs);
+		return (CancelOperation);
+	}	
+	return (CancelOperation);
+}"
+			   SEQUENCE="9"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2018 16:04:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="SiebelMessageToJSON"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function SiebelMessageToJSON(Inputs, Outputs)
+{
+	// ListOfArrayNodes = which we need to pass as List of Repetative Array Nodes to form List in JSON.
+	// pass siebel Message as Child for inputs.
+    try
+    {
+        var app = TheApplication();
+        var PrimarySiebelMessage = app.NewPropertySet();
+        var SecondarySiebelMessage = app.NewPropertySet();
+        var docConverterBS = app.GetService(&quot;EAI XML Converter&quot;);
+        var propSetConverterBS = app.GetService(&quot;XML Converter&quot;);
+        var psInputDoc = app.NewPropertySet();
+        var psOutputDoc = app.NewPropertySet();
+        var psOutputPropSet = app.NewPropertySet();
+        if (Inputs.GetChildCount() == 0)
+			Outputs.SetProperty(&quot;Error Message&quot; , &quot;Please provide Siebel Message as input.&quot;);        //app.RaiseErrorText(&quot;Please provide Siebel Message as input.&quot;);
+        if (Inputs.GetChildCount() &gt; 0)
+        {
+            for (var x = 0; x &lt; Inputs.GetChildCount(); x++)
+            {
+                psInputDoc.Reset();
+                psOutputDoc.Reset();
+                if (x == 0)
+                {
+                    PrimarySiebelMessage = Inputs.GetChild(x);
+                    psInputDoc.SetProperty(&quot;UseSiebelMessageEnvelope&quot;, &quot;false&quot;);
+                    psInputDoc.AddChild(PrimarySiebelMessage);
+                    docConverterBS.InvokeMethod(&quot;PropSetToXML&quot;, psInputDoc, psOutputDoc);
+                    propSetConverterBS.InvokeMethod(&quot;XMLToPropSet&quot;, psOutputDoc, psOutputPropSet);
+                }
+                /*--------------------------------------------sec child*/
+                else
+                {
+                    SecondarySiebelMessage = Inputs.GetChild(x);
+
+                    if (SecondarySiebelMessage.GetChildCount() &gt; 0)
+                    {
+                        var psOutputPropSet2 = app.NewPropertySet();
+                        psInputDoc.SetProperty(&quot;UseSiebelMessageEnvelope&quot;, &quot;false&quot;);
+                        psInputDoc.AddChild(SecondarySiebelMessage);
+                        docConverterBS.InvokeMethod(&quot;PropSetToXML&quot;, psInputDoc, psOutputDoc);
+                        propSetConverterBS.InvokeMethod(&quot;XMLToPropSet&quot;, psOutputDoc, psOutputPropSet2);
+                        for (var i = 0; i &lt; psOutputPropSet2.GetChildCount(); i++)
+                        {
+                            psOutputPropSet.AddChild(psOutputPropSet2.GetChild(i));
+                        }
+                    }
+                }
+            }
+        }
+        psOutputPropSet.SetProperty(&quot;ListOfArrayNodes&quot;, Inputs.GetProperty(&quot;ListOfArrayNodes&quot;));
+        
+		// ---- Parse JSON request ----
+		CreateJSONArray(psOutputPropSet, Outputs);
+        
+		Outputs.AddChild(psOutputPropSet.Copy());
+    }
+    catch (e)
+    {
+		Outputs.SetProperty(&quot;Error Message&quot; , e.toString());
+        throw (e);
+    }
+    finally
+    {
+        docConverterBS = null;
+        propSetConverterBS = null;
+        psInputDoc = null;
+        psOutputDoc = null;
+        psOutputPropSet2 = null;
+        PrimarySiebelMessage = null;
+        SecondarySiebelMessage = null;
+        app = null;
+    }
+}"
+			   SEQUENCE="6"
+			   UPDATED="02/22/2023 18:06:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/22/2023 18:06:47"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+

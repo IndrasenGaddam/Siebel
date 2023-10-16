@@ -1,0 +1,5240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   COMMENTS="UpgEimCol"
+   NAME="Siebel Repository"
+   UPDATED="06/13/2018 00:05:02"
+   UPDATED_BY="T968113"
+   CREATED="12/18/2017 18:46:26"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LOCKED="N"
+	   NAME="TNZ Siebel Rest API"
+	   UI_FREEZE="N"
+	   UPDATED="05/26/2020 11:13:36"
+	   UPDATED_BY="T968111"
+	   CREATED="03/11/2019 16:06:37"
+	   CREATED_BY="T826826"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   COMMENTS="HN: Created for general bs methods to be invoked from rest api
+SS: Updated BS to Use in Quick Journeys"
+		   EXTERNAL_USE="N"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="TNZ Rest API BS"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   UPDATED="12/04/2020 15:08:03"
+		   UPDATED_BY="SADMIN"
+		   CREATED="04/01/2019 22:54:54"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="Rest API"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="04/01/2019 22:55:15"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:55:15"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_LOCALE>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="ActivateService"
+			   UPDATED="07/27/2023 15:52:25"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/27/2023 15:52:25"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="AssetId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/27/2023 15:52:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/27/2023 15:52:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/27/2023 15:52:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/27/2023 15:52:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SerialNumber"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/27/2023 15:52:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/27/2023 15:52:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/27/2023 15:52:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/27/2023 15:52:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="ActivateService"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="07/27/2023 15:52:26"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/27/2023 15:52:26"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="CheckLSP"
+			   UPDATED="02/21/2020 12:47:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:47:36"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/21/2020 12:47:51"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="RequestMode"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/21/2020 12:47:51"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/21/2020 12:47:51"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="sNumber"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/21/2020 12:47:51"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="CheckLSP"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="02/21/2020 12:47:39"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:39"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="CreateContact"
+			   UPDATED="07/18/2023 09:03:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/18/2023 09:03:13"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Account Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="DOB"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Email Address"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Expiry Date"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="First Name"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Last Name"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/18/2023 09:03:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Middle Name"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Phone Number"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Role"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Secondary Phone Number"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="CreateContact"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="07/18/2023 09:03:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:16"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="CreateCustomer"
+			   UPDATED="02/21/2020 12:47:52"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:47:36"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/21/2020 12:47:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:52"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="02/21/2020 12:47:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:52"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="CreateCustomer"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="02/21/2020 12:47:41"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="EAIQuery"
+			   UPDATED="02/21/2020 12:47:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:11"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="IOName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:35"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:37"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:37"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="MethodName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:35"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PrimaryRowId"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:36"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:36"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SearchSpecification"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/21/2020 12:47:50"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:36"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:36"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:36"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="EAIQuery"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="FindOneClickEligiblility"
+			   UPDATED="11/08/2019 15:14:17"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Integration Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:16"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:16"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SIMNumber"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:16"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:17"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="FindOneClickEligiblility"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="FindOpenOrder"
+			   UPDATED="11/08/2019 15:14:17"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Integration Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:17"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:17"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:17"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="FindOpenOrder"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetAccContactDetails"
+			   UPDATED="11/08/2019 15:14:19"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Account Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:18"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Email"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:18"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:18"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:18"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Phone"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetAccContactDetails"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetContactPreference"
+			   UPDATED="04/01/2019 22:54:59"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:54:55"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Active"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="LastUpdatedDatetime"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:58"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="MediumType"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:58"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TNZAlertType"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:58"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TNZOptIn"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TNZPreferredMethod"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TNZSource"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TNZValue"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/01/2019 22:54:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="UID"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="04/01/2019 22:54:58"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:58"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetContactPreference"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="04/01/2019 22:54:56"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2019 22:54:56"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetETFCharges"
+			   UPDATED="05/24/2020 00:22:15"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:11"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="AccountId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="AssetId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ChargeAmount"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Context"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="NET"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 00:22:15"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 00:22:15"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="OfferChangeLastMonthFlg"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TargetPromotionId"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 00:22:12"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetETFCharges"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:29"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:29"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetEmployeeResponsibility"
+			   UPDATED="06/14/2019 15:39:14"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/14/2019 15:38:55"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ResponsibilityName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="06/14/2019 15:39:14"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/14/2019 15:39:14"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="UserId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="06/14/2019 15:39:14"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/14/2019 15:39:14"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="isResponsibility"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="06/14/2019 15:39:14"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/14/2019 15:39:14"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetEmployeeResponsibility"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="06/14/2019 15:38:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/14/2019 15:38:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetExtras"
+			   UPDATED="11/08/2019 15:14:20"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:19"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:19"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SerialNum"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetExtras"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:27"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:27"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetSRAdminDetails"
+			   UPDATED="05/24/2020 16:50:21"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2020 16:50:01"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Category"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="DisputeFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="LOB"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SubCategory"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Type"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="UnderEnquiryFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="GetSRAdminDetails"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="05/24/2020 16:50:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:08"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="NumberReserveMgmt"
+			   UPDATED="02/21/2020 12:47:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ELID"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="LineItemId"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="NET"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="OrderId"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="PagingKey"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="RequestAction"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="02/21/2020 12:47:51"
+				   UPDATED_BY="SADMIN"
+				   CREATED="02/21/2020 12:47:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="RequestMode"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ServiceType"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="sNumber"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:23"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:23"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="NumberReserveMgmt"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="OutboundRestUtility"
+			   UPDATED="03/23/2023 17:09:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/23/2023 17:09:54"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="AppendToSystemPreference"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Error Code"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Error Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="JsonRequest"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="JsonResponse"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ListOfArrayNodes"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="RequestMethod"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ResponseType"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/29/2023 15:55:14"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Success"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="TransactionId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="URL"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="URLSystemPreferenceName"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/23/2023 17:09:59"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:59"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="OutboundRestUtility"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="03/23/2023 17:09:56"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/23/2023 17:09:56"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="RSTTQuery"
+			   UPDATED="05/24/2020 16:50:20"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2020 16:50:01"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="BCName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="BOName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="OnMatch1"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SearchSpecification"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="outputFields"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="05/24/2020 16:50:20"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:20"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="RSTTQuery"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="05/24/2020 16:50:06"
+				   UPDATED_BY="SADMIN"
+				   CREATED="05/24/2020 16:50:06"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="ReserveFirstNumber"
+			   UPDATED="11/08/2019 15:14:24"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:13:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="LineItemId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:23"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:23"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:23"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:23"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="OrderId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:24"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:24"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="11/08/2019 15:14:24"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:24"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="sNumber"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="11/08/2019 15:14:24"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:14:24"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="ReserveFirstNumber"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="11/08/2019 15:13:28"
+				   UPDATED_BY="SADMIN"
+				   CREATED="11/08/2019 15:13:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="RunBusinessService"
+			   UPDATED="04/26/2023 09:36:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/26/2023 09:36:47"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/26/2023 09:36:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/26/2023 09:36:52"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="MethodName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="04/26/2023 09:36:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/26/2023 09:36:52"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ServiceName"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="04/26/2023 09:36:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/26/2023 09:36:51"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="04/26/2023 09:36:52"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/26/2023 09:36:52"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="RunBusinessService"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="04/26/2023 09:36:49"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/26/2023 09:36:49"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="UpdateContact"
+			   UPDATED="07/18/2023 09:03:13"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/18/2023 09:03:13"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Account Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Contact Id"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="DOB"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Email Address"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:21"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:21"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Expiry Date"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="First Name"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Last Name"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Message"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Middle Name"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Phone Number"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Role"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SuccessFlag"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="07/18/2023 09:03:22"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:22"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="UpdateContact"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="07/18/2023 09:03:16"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/18/2023 09:03:16"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="(declarations)"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="var message:chars = &quot;&quot;, Num = 0;"
+			   SEQUENCE="1"
+			   UPDATED="05/08/2023 10:32:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:55:14"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ActivateService"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ActivateService(Inputs, Outputs) 
+{
+    try 
+	{
+        var vAssetId: chars = Inputs.GetProperty(&quot;AssetId&quot;);
+		var serialNumber: chars = Inputs.GetProperty(&quot;SerialNumber&quot;);
+        var sResult = 0;
+        var isRecord;
+        var isProductAssetRecord;
+        var isProdAttRecord;
+        var vProdAssetId;
+        var sPromIntegId;
+        var vProdName;
+        var vLovProdName;
+        var vValue;
+        var sServiceActivateWF, sServiceActivateWFInp, sServiceActivateWFOut;
+        var boLOV: BusObject = null;
+        var bcLOV: BusComp = null;
+        var mdAssetFlg: chars = &quot;&quot;;
+        var processName: chars = &quot;&quot;;
+        var Expr: chars = &quot;&quot;;
+		
+		//Setting output arguments
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+
+        var boAsset = TheApplication().GetBusObject(&quot;Asset DB&quot;);
+        var bcAsset = boAsset.GetBusComp(&quot;Asset Mgmt - Asset&quot;);
+        var boProductAsset = TheApplication().GetBusObject(&quot;Asset DB&quot;);
+        var bcProductAsset = boProductAsset.GetBusComp(&quot;Asset Mgmt - Asset&quot;);
+        var boProdAtt = TheApplication().GetBusObject(&quot;Asset Management&quot;);
+        var bcProdAtt = boProdAtt.GetBusComp(&quot;Asset Mgmt - Asset XA&quot;);
+
+        if (vAssetId != &quot;&quot; || vAssetId != null) 
+		{
+            bcAsset.ActivateField(&quot;Integration Id&quot;);
+            bcAsset.SetViewMode(AllView);
+            bcAsset.ClearToQuery();
+            bcAsset.SetSearchSpec(&quot;Id&quot;, vAssetId);
+
+            bcAsset.ExecuteQuery(ForwardOnly);
+            isRecord = bcAsset.FirstRecord();
+
+            if (isRecord) 
+			{
+                sPromIntegId = bcAsset.GetFieldValue(&quot;Integration Id&quot;);
+                bcProductAsset.ActivateField(&quot;Prod Prom Instance Id&quot;);
+                bcProductAsset.ActivateField(&quot;TNZ Promotion Id&quot;);
+                bcProductAsset.ActivateField(&quot;Product Name&quot;);
+                bcProductAsset.SetViewMode(AllView);
+                bcProductAsset.ClearToQuery();
+                bcProductAsset.SetSearchExpr(&quot;[TNZ Promotion Id]=&apos;&quot; + sPromIntegId + &quot;&apos;&quot;);
+                bcProductAsset.ExecuteQuery(ForwardOnly);
+                isProductAssetRecord = bcProductAsset.FirstRecord();
+                while (isProductAssetRecord) 
+				{
+                    vProdAssetId = bcProductAsset.GetFieldValue(&quot;Id&quot;);
+                    vProdName = bcProductAsset.GetFieldValue(&quot;Product Name&quot;);
+                    boLOV = TheApplication().GetBusObject(&quot;List Of Values&quot;);
+                    bcLOV = boLOV.GetBusComp(&quot;List Of Values&quot;);
+                    mdAssetFlg = &quot;&quot;;
+
+                    with(bcLOV) 
+					{
+                        SetViewMode(AllView);
+                        ActivateField(&quot;Value&quot;);
+                        ActivateField(&quot;Target High&quot;);
+                        ClearToQuery();
+                        SetSearchExpr(&quot;[Type]=&apos;SERVICE_ACTIVE_PRODUCT_NAME&apos; AND [Name] = &apos;&quot; + vProdName + &quot;&apos; AND [Active] = &apos;Y&apos;&quot;);
+                        ExecuteQuery(ForwardOnly);
+                        if (FirstRecord()) 
+						{
+                            vLovProdName = GetFieldValue(&quot;Value&quot;);
+                            mdAssetFlg = GetFieldValue(&quot;Target High&quot;);
+                        }
+                    }
+                    if (vProdName == vLovProdName) 
+					{
+                        bcProdAtt.ActivateField(&quot;Object Id&quot;);
+                        bcProdAtt.ActivateField(&quot;Display Name&quot;);
+                        bcProdAtt.SetViewMode(AllView);
+                        bcProdAtt.ClearToQuery();
+                        Expr = &quot;[Object Id]=&apos;&quot; + vProdAssetId + &quot;&apos; AND [Name] =&apos;servicePreactivation&apos;&quot;;
+                        bcProdAtt.SetSearchExpr(Expr);
+                        bcProdAtt.ExecuteQuery(ForwardOnly);
+                        isProdAttRecord = bcProdAtt.FirstRecord();
+                        if (isProdAttRecord) 
+						{
+                            vValue = bcProdAtt.GetFieldValue(&quot;Value&quot;);
+
+                            if (vValue == &apos;N&apos;) 
+							{
+                                TheApplication().RaiseErrorText(&quot;Service is Already Active&quot;);
+                            } 
+							else 
+							{
+                                var attributeRowId = bcProdAtt.GetFieldValue(&quot;Id&quot;);
+                                sServiceActivateWF = TheApplication().GetService(&quot;Workflow Process Manager&quot;);
+                                sServiceActivateWFInp = TheApplication().NewPropertySet();
+                                sServiceActivateWFOut = TheApplication().NewPropertySet();
+
+                                if (mdAssetFlg == &quot;1&quot;) 
+								{
+                                    processName = &quot;TNZ MD Access Billing Sync WF&quot;;
+                                    sServiceActivateWFInp.SetProperty(&quot;Promotion Asset Id&quot;, vAssetId);
+                                    sServiceActivateWFInp.SetProperty(&quot;Attribute Id&quot;, attributeRowId);
+                                } 
+								else 
+								{
+                                    processName = &quot;TNZ Postpaid Service Activation WF&quot;;
+                                    sServiceActivateWFInp.SetProperty(&quot;Object Id&quot;, vProdAssetId);
+                                    sServiceActivateWFInp.SetProperty(&quot;ServiceId&quot;, serialNumber);
+                                }
+                                sServiceActivateWFInp.SetProperty(&quot;ProcessName&quot;, processName);
+                                sServiceActivateWF.InvokeMethod(&quot;RunProcess&quot;, sServiceActivateWFInp, sServiceActivateWFOut);
+                                break;
+                            }
+                        }
+                    }
+                    isProductAssetRecord = bcProductAsset.NextRecord();
+                }
+            }
+        }
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Service is activated successfully&quot;);
+    }
+	catch (e) 
+	{
+        Outputs.SetProperty(&quot;Message&quot;, e.toString());
+    } 
+	finally 
+	{
+        bcProductAsset = null;
+        boProductAsset = null;
+        bcProdAtt = null;
+        boProdAtt = null;
+		bcAsset = null;
+        boAsset = null;
+        sServiceActivateWF = null;
+		sServiceActivateWFOut = null;
+        sServiceActivateWFInp = null;
+    }
+}"
+			   SEQUENCE="2"
+			   UPDATED="07/27/2023 15:52:39"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/27/2023 15:52:39"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="BusCompOperation"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function BusCompOperation(Inputs: PropertySet, Outputs: PropertySet)
+{
+    try 
+	{
+        var objAppln, objBusObj, objBusComp, PrimaryRowId = &quot;&quot;, FieldNameList = &quot;&quot;, FieldValueList = &quot;&quot;;
+		var SearchSpec:String = &quot;&quot;;
+		var Fieldvalue:String = &quot;&quot;;
+		var i:Number = 0;
+		var NumAffRows:Number = 0;
+		var arrLen:Number = 0;
+		var isRecordPresent: bool = false;
+        var OprationMode: chars = Inputs.GetProperty(&quot;OprationMode&quot;);
+		var seperator: chars = &quot;&quot;;
+		var QueryResult:PropertySet = TheApplication().NewPropertySet();
+		var Record:PropertySet = TheApplication().NewPropertySet();
+		var sortSpecFieldLists: chars = &quot;&quot;;
+		var sortSpecModeLists: chars = &quot;&quot;;
+		var sortSpecField: Array = new Array();
+		var sortSpecMode: Array = new Array();
+		var sortSpec: String = &quot;&quot;;
+		var needAllRecords: chars = &quot;&quot;;
+		var ProductLineItemId: chars =&quot;&quot;;
+		objAppln = TheApplication();
+
+        with(Inputs)
+		{
+            objBusObj = GetProperty(&quot;Business Object&quot;);
+            objBusComp = GetProperty(&quot;Business Component&quot;);
+            PrimaryRowId = GetProperty(&quot;PrimaryRowId&quot;);
+            SearchSpec = GetProperty(&quot;SearchSpecification&quot;);
+            FieldNameList = GetProperty(&quot;FieldNameList&quot;);
+            FieldValueList = GetProperty(&quot;FieldValueList&quot;);
+			seperator = GetProperty(&quot;Seperator&quot;);
+			sortSpecFieldLists = GetProperty(&quot;SortSpecFieldList&quot;);
+			sortSpecModeLists = GetProperty(&quot;SortSpecModeList&quot;);
+			needAllRecords = GetProperty(&quot;NeedAllRecords&quot;);
+        }
+		
+		if (seperator != &quot;&quot;)
+		{
+			FieldNameList = FieldNameList.split(seperator);
+			FieldValueList = FieldValueList.split(seperator);
+			if(sortSpecFieldLists != &quot;&quot; &amp;&amp; sortSpecModeLists != &quot;&quot;)
+			{
+				sortSpecField = sortSpecFieldLists.split(seperator);
+				sortSpecMode = sortSpecModeLists.split(seperator);
+			}
+		}
+		else
+		{
+			FieldNameList = FieldNameList.split(&quot;:&quot;);
+			FieldValueList = FieldValueList.split(&quot;:&quot;);
+			if(sortSpecFieldLists != &quot;&quot; &amp;&amp; sortSpecModeLists != &quot;&quot;)
+			{
+				sortSpecField = sortSpecFieldLists.split(&quot;:&quot;);
+				sortSpecMode = sortSpecModeLists.split(&quot;:&quot;);
+			}
+		}
+        arrLen = FieldNameList.length;
+
+		/* Created below to form a Sort Spec to be applied on BCs, as applicable */
+		if(sortSpecField.length &gt; 0 &amp;&amp; sortSpecMode.length &gt; 0 &amp;&amp; sortSpecField.length == sortSpecMode.length)
+		{
+			for (var j=0; j&lt;sortSpecField.length; j++)
+			{
+				sortSpec = sortSpec + sortSpecField[j] + &quot;(&quot; + sortSpecMode[j] + &quot;)&quot; + &quot;,&quot;;
+			}
+			sortSpec = sortSpec.substring(0, sortSpec.length - 1); // this is to remove the trailing comma (,)
+		}
+
+        objBusObj = objAppln.GetBusObject(objBusObj);
+        objBusComp = objBusObj.GetBusComp(objBusComp);
+        with(objBusComp)
+		{
+            SetViewMode(AllView);
+            ClearToQuery();
+            for (i = 0; i &lt; arrLen; i++)
+			{
+                ActivateField(FieldNameList[i]);
+            }
+            if (OprationMode == &quot;Update&quot; || OprationMode == &quot;Delete&quot; || OprationMode == &quot;Query&quot;)
+			{
+                if (PrimaryRowId != &quot;&quot;)
+                    SetSearchSpec(&quot;Id&quot;, PrimaryRowId);
+                else
+                    SetSearchExpr(SearchSpec);
+				
+				if(sortSpec != &quot;&quot;)
+					SetSortSpec(sortSpec);
+
+                if (PrimaryRowId != &quot;&quot; || SearchSpec != &quot;&quot;) 
+				{
+                    ExecuteQuery(ForwardOnly);
+                    isRecordPresent = FirstRecord();
+					
+					if(isRecordPresent) //Shubhashis:Added to remove the unnecessary error if no record is found
+					{
+						ProductLineItemId = GetFieldValue(&quot;Id&quot;);
+
+						if (OprationMode == &quot;Query&quot;) 
+						{
+							if(needAllRecords == &quot;N&quot; || needAllRecords == &quot;No&quot;)
+							{
+								if(isRecordPresent)
+								{
+									for (i = 0; i &lt; arrLen; i++) 
+									{
+										Fieldvalue = GetFieldValue(FieldNameList[i]);
+										Outputs.SetProperty(FieldNameList[i], Fieldvalue);
+									}
+								}
+							}
+							else
+							{
+								while (isRecordPresent)
+								{
+									Record = TheApplication().NewPropertySet();
+									for (i = 0; i &lt; arrLen; i++)
+									{
+										Fieldvalue = GetFieldValue(FieldNameList[i]);
+										Record.SetProperty(FieldNameList[i], Fieldvalue);
+									}
+									QueryResult.AddChild(Record);
+									isRecordPresent = NextRecord();
+									NumAffRows = NumAffRows + 1;
+								}
+								QueryResult.SetProperty(&quot;RecordCount&quot;, NumAffRows);
+								Outputs.AddChild(QueryResult);
+							}
+						}
+						
+						 else if (OprationMode == &quot;Delete&quot;)
+						{
+							DeleteRecord();
+						}
+						
+						else
+						{
+							while (isRecordPresent) 
+							{                            
+								for (i = 0; i &lt; arrLen; i++) 
+								{
+									SetFieldValue(FieldNameList[i], FieldValueList[i]);
+								}
+								WriteRecord();
+								isRecordPresent = NextRecord();
+								NumAffRows = NumAffRows + 1;
+							}
+						}
+					}
+                }
+            }
+
+			else if (OprationMode == &quot;Insert&quot;)
+			{
+                NewRecord(NewAfter);
+				ProductLineItemId = GetFieldValue(&quot;Id&quot;);
+                for (i = 0; i &lt; arrLen; i++)
+				{
+                    SetFieldValue(FieldNameList[i], FieldValueList[i]);
+				}
+                WriteRecord();
+            }
+
+			else
+                TheApplication().RaiseErrorText(&quot;Please provide all required inputs&quot;);
+        }
+		Outputs.SetProperty(&quot;ProdoctItemId&quot;, ProductLineItemId);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully&quot;);
+    }
+
+	catch (e)
+	{
+        Outputs.SetProperty(&quot;Message&quot;, e.toString());
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+    }
+
+	finally
+	{
+        objBusComp = null;
+        objBusObj = null;
+        objAppln = null;
+        FieldNameList = null;
+        FieldValueList = null;
+		QueryResult = null;
+		Record = null;
+    }
+    return (CancelOperation);
+}"
+			   SEQUENCE="3"
+			   UPDATED="07/28/2023 09:14:21"
+			   UPDATED_BY="SADMIN"
+			   CREATED="12/04/2020 15:08:03"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CheckLSP"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CheckLSP (Inputs:PropertySet, Outputs:PropertySet)
+{
+		//Working Items
+	var sNumber:chars = Inputs.GetProperty(&quot;sNumber&quot;);
+	var requestMode:chars = Inputs.GetProperty(&quot;RequestMode&quot;);
+	var serviceProviderId:chars = &quot;&quot;, carrierId:chars = &quot;&quot;;
+	var bsWFService:Service = TheApplication().GetService(&quot;Workflow Process Manager&quot;);
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+
+		//O/p Prop Set
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+
+	try
+	{
+		if(sNumber == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Number is Mandatory for this Action!&quot;);
+	 
+		if(requestMode == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Request Mode is missing in the request!&quot;);
+
+		if(requestMode == &quot;Query&quot;)
+		{
+			psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Manage Porting Number Resource WF&quot;);
+			psInput.SetProperty(&quot;MobNum&quot;, sNumber);
+			bsWFService.InvokeMethod(&quot;RunProcess&quot;, psInput, psOutput);
+
+			if(psOutput.GetProperty(&quot;Error Message&quot;) != &quot;&quot; &amp;&amp; psOutput.GetProperty(&quot;Error Message&quot;) != null &amp;&amp; psOutput.GetProperty(&quot;Success&quot;) == &quot;false&quot;)
+				TheApplication().RaiseErrorText(psOutput.GetProperty(&quot;Error Message&quot;));
+
+			serviceProviderId = Outputs.SetProperty(&quot;ServiceProviderId&quot;, psOutput.GetProperty(&quot;ServProviderId&quot;));
+			carrierId = Outputs.SetProperty(&quot;CarrierId&quot;, psOutput.GetProperty(&quot;CarrierId&quot;));
+			Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;LSP Details fetched Successfully!&quot;);
+		}
+
+		else
+			TheApplication().RaiseErrorText(&quot;Provided Request Mode &apos;&quot; +requestMode+&quot;&apos; is not applicable for this Service!&quot;);
+	}
+
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+
+	finally
+	{
+		psOutput = null;
+		psInput = null;
+		bsWFService = null;
+	}
+}"
+			   SEQUENCE="4"
+			   UPDATED="07/27/2023 15:52:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:48:18"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CreateAccount"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CreateAccount (Inputs:PropertySet, Outputs:PropertySet)
+{
+	var cBO_Name:chars = &quot;Account&quot;;
+	var accountNumber:chars = &quot;&quot;;
+	var accountBO:BusObject = TheApplication().GetBusObject(&quot;Account&quot;);
+	var accountBC:BusComp = accountBO.GetBusComp(&quot;Account&quot;);
+	var accountHierarchyBC:BusComp = accountBO.GetBusComp(&quot;Com Account Hierarchy&quot;);
+	var CSN:chars = Inputs.GetProperty(&quot;CSN&quot;);
+	var accountType:chars = Inputs.GetProperty(&quot;accountType&quot;);
+	var billMedium:chars = Inputs.GetProperty(&quot;billMedium&quot;);
+	var eBillEmail:chars = Inputs.GetProperty(&quot;eBillEmail&quot;);
+		
+	try
+	{
+		if(CSN == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Customer# is NULL in Account Creation Method!&quot;);
+		
+		if(billMedium == &quot;Email&quot; &amp;&amp; eBillEmail == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Email Address is mandatory for Bill Medium &apos;Email&apos;!&quot;);
+		
+		if(accountType == &quot;POSTPAID&quot;)
+		{
+			with(accountBC)
+			{
+				SetViewMode(AllView);
+				ClearToQuery();
+				SetSearchExpr(&quot;[CSN] = &apos;&quot;+CSN+&quot;&apos;&quot;);
+				ExecuteQuery(ForwardOnly);
+				
+				if(!FirstRecord())
+					TheApplication().RaiseErrorText(&quot;No Customer details found for the Customer# Provided!&quot;);
+				
+				else
+				{
+					Outputs.SetProperty(&quot;CustomerId&quot;, GetFieldValue(&quot;Id&quot;));
+					with(accountHierarchyBC)
+					{
+						SetViewMode(AllView);
+						ActivateField(&quot;Payment Type&quot;);
+						ClearToQuery();
+						NewRecord(NewAfter);
+						SetFieldValue(&quot;Payment Type&quot;, &quot;POSTPAID&quot;);
+						
+						if(billMedium != &quot;Email&quot;)
+							SetFieldValue(&quot;TNZ Bill Medium&quot;, billMedium);
+						
+						if(billMedium == &quot;Email&quot;)
+							SetFieldValue(&quot;TNZ eBill Email&quot;, eBillEmail);
+						
+						WriteRecord();
+						accountNumber = GetFieldValue(&quot;Account Number&quot;);
+						Outputs.SetProperty(&quot;AccountId&quot;,GetFieldValue(&quot;Id&quot;));
+					}
+				}
+				message = message + &quot; &quot; + &quot;Account Creation is successful. Account# : &quot; + accountNumber;
+				Outputs.SetProperty(&quot;Message&quot;, message);
+				Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+			}
+		}
+	}
+	
+	catch(e)
+	{
+		throw(e);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	}
+	
+	finally
+	{
+		accountHierarchyBC = null;
+		accountBC = null;
+		accountBO = null;
+	}
+}"
+			   SEQUENCE="5"
+			   UPDATED="07/27/2023 15:52:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:48:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CreateContact"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CreateContact(Inputs: PropertySet, Outputs: PropertySet)
+{
+	try
+	{
+		// Fetching input arguments
+		var firstName: chars = Inputs.GetProperty(&quot;First Name&quot;);
+		var lastName: chars = Inputs.GetProperty(&quot;Last Name&quot;);
+		var middleName: chars = Inputs.GetProperty(&quot;Middle Name&quot;);
+		var dob: chars = Inputs.GetProperty(&quot;DOB&quot;);
+		var emailAddress: chars = Inputs.GetProperty(&quot;Email Address&quot;);
+		var phoneNumber: chars = Inputs.GetProperty(&quot;Phone Number&quot;);
+		var secondaryPhoneNumber: chars = Inputs.GetProperty(&quot;Secondary Phone Number&quot;);
+		var endDate: chars = Inputs.GetProperty(&quot;Expiry Date&quot;);
+		var accountId: chars = Inputs.GetProperty(&quot;Account Id&quot;);
+		var role: chars = Inputs.GetProperty(&quot;Role&quot;);
+		
+		// Setting default Output Properties
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+		
+		// Setting service properties
+		var cBS_PRM: chars = &quot;PRM ANI Utility Service&quot;;
+		var bsPRM: Service = TheApplication().GetService(cBS_PRM);
+		var cBS_DM: chars = &quot;EAI Data Transformation Engine&quot;;
+		var bsDM: Service = TheApplication().GetService(cBS_DM);
+		var cBS_Contact: chars = &quot;TNZ Create Account DL BS&quot;;
+		var bsContact: Service = TheApplication().GetService(cBS_Contact);
+		var psInp: PropertySet = TheApplication().NewPropertySet();
+		var psOut: PropertySet = TheApplication().NewPropertySet();
+		
+		// Input validations
+		if(accountId == null || accountId == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;Account Id is mandatory&quot;);
+		}
+		if(firstName == null || firstName == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;First Name is mandatory&quot;);
+		}
+		if(lastName == null || lastName == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;Last Name is mandatory&quot;);
+		}
+		
+		// Creating empty prop set
+		psInp.SetProperty(&quot;Hierarchy Name&quot;, &quot;TNZ Internal Fibre Maintain Cust Request IO&quot;);
+		bsPRM.InvokeMethod(&quot;CreateEmptyPropSet&quot;, psInp, psOut);
+		psInp.Reset();
+		// Parsing through DM
+		psOut.SetProperty(&quot;MapName&quot;, &quot;TNZ Internal Contact Mapping DM&quot;);
+		psOut.SetProperty(&quot;FirstName&quot;, firstName);
+		psOut.SetProperty(&quot;LastName&quot;, lastName);
+		psOut.SetProperty(&quot;Middle Name&quot;, middleName);
+		psOut.SetProperty(&quot;DOB&quot;, dob);
+		psOut.SetProperty(&quot;EmailAddress&quot;, emailAddress);
+		psOut.SetProperty(&quot;PhoneNumber&quot;, phoneNumber);
+		psOut.SetProperty(&quot;SecondaryPhoneNumber&quot;, secondaryPhoneNumber);
+		psOut.SetProperty(&quot;EndDate&quot;, endDate);
+		psOut.SetProperty(&quot;AccountId&quot;, accountId);
+		psOut.SetProperty(&quot;Role&quot;, role);
+		bsDM.InvokeMethod(&quot;Execute&quot;, psOut, psInp);
+		psOut.Reset();
+		// Triggering Contact Creation BS
+		bsContact.InvokeMethod(&quot;CreateContact&quot;, psInp, psOut);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Contact creation is successful&quot;);
+		Outputs.SetProperty(&quot;ContactId&quot;, psOut.GetProperty(&quot;ContactId&quot;));
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		psOut = null;
+		psInp = null;
+		bsContact = null;
+		cBS_Contact = null;
+		bsDM = null;
+		cBS_DM = null;
+		bsPRM = null;
+		cBS_PRM = null;
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="6"
+			   UPDATED="08/01/2023 11:43:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/18/2023 09:03:34"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="CreateCustomer"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function CreateCustomer (Inputs:PropertySet, Outputs:PropertySet)
+{
+	var CSN:chars = &quot;&quot;;
+	var bsWFService:Service = TheApplication().GetService(&quot;Workflow Process Manager&quot;);
+	
+		//O/P Prop Sets
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+			// Header Message Parameters Validation
+		if(Inputs.GetProperty(&quot;lineOfBusiness&quot;) == &quot;&quot; || Inputs.GetProperty(&quot;application&quot;) == &quot;&quot; || Inputs.GetProperty(&quot;ProcessName&quot;) == &quot;&quot; || Inputs.GetProperty(&quot;user&quot;) == &quot;&quot; || Inputs.GetProperty(&quot;action&quot;) == &quot;&quot; || Inputs.GetProperty(&quot;processContext&quot;) == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Missing Mandatory Header Parameters!!!&quot;);
+		
+		if(!ToNumber(Inputs.GetChildCount()) &gt; 0)
+			TheApplication().RaiseErrorText(&quot;Input Message has no Child Present!!!&quot;);
+
+		if(Inputs.GetChild(0).GetType() == &quot;SiebelMessage&quot;)
+		{
+			bsWFService.InvokeMethod(&quot;RunProcess&quot;, Inputs, Outputs);
+		}
+		
+		else
+			TheApplication().RaiseErrorText(&quot;Type SiebelMessage Not Found at First Child Level!!!&quot;);
+
+			// Added this for WF Message check, where we are logging exception and Ending the process.
+		if(Outputs.GetProperty(&quot;Error Message&quot;) != &quot;&quot;)
+			TheApplication().RaiseErrorText(Outputs.GetProperty(&quot;Error Message&quot;));
+
+		CSN = Outputs.GetChild(0).GetChild(0).GetChild(0).GetProperty(&quot;CSN&quot;);
+			//Setting this Profile Attribute to by-pass the Instantiation of Credit Consent BC on Com Account Hierarchy BC Pre-Set Field Value
+		TheApplication().SetProfileAttr(&quot;ActionContext&quot;, &quot;QUICK_JOURNEY&quot;);
+
+		Inputs.SetProperty(&quot;CSN&quot;, CSN);
+		CreateAccount (Inputs, Outputs);
+
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Customer Creation is Successful. Your Customer # is &quot; + CSN + &quot;. &quot; + message);
+		
+	}
+	
+	catch(e)
+	{
+			//Resetting the Profile Attribute
+		TheApplication().SetProfileAttr(&quot;ActionContext&quot;, &quot;&quot;);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+			//Resetting the Profile Attribute
+		TheApplication().SetProfileAttr(&quot;ActionContext&quot;, &quot;&quot;);
+		bsWFService = null;
+	}
+}"
+			   SEQUENCE="7"
+			   UPDATED="08/01/2023 11:43:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:48:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="EAIQuery"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function EAIQuery(Inputs:PropertySet, Outputs:PropertySet)
+{
+	var primaryRowId:chars = Inputs.GetProperty(&quot;PrimaryRowId&quot;);
+	var searchSpec:chars = Inputs.GetProperty(&quot;SearchSpecification&quot;);
+	var methodName:chars = Inputs.GetProperty(&quot;MethodName&quot;);
+	var searchIOName:chars = Inputs.GetProperty(&quot;IOName&quot;);
+	var newQuery: chars = Inputs.GetProperty(&quot;NewQuery&quot;) ? Inputs.GetProperty(&quot;NewQuery&quot;) : &quot;true&quot;;
+	var startRowNum: Number = Inputs.GetProperty(&quot;StartRowNum&quot;) ? Inputs.GetProperty(&quot;StartRowNum&quot;) : 0;
+	var pageSize: Number = Inputs.GetProperty(&quot;PageSize&quot;) ? Inputs.GetProperty(&quot;PageSize&quot;) : 10;
+	var sortSpecFieldLists: chars = Inputs.GetProperty(&quot;SortSpecFieldList&quot;);
+	var sortSpecModeLists: chars = Inputs.GetProperty(&quot;SortSpecModeList&quot;);
+	var separator: chars = Inputs.GetProperty(&quot;Separator&quot;);
+	var cBS_EAIAdapter:chars = &quot;EAI Siebel Adapter&quot;;
+	var sortSpec: String = &quot;&quot;;
+	var sortSpecField: Array = new Array();
+	var sortSpecMode: Array = new Array();
+
+	var bsEAIAdapter:Service = TheApplication().GetService(cBS_EAIAdapter);
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+	
+		//Setting O/P Property
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+		if(methodName == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Method Name is mandatory for running the Required Business Service&quot;);
+
+		if(searchIOName == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Input IO Name is mandatory for running the Required Business Service&quot;);
+
+		if(methodName == &quot;Query&quot; || methodName == &quot;QueryPage&quot;)
+		{
+			if(methodName == &quot;Query&quot; &amp;&amp; primaryRowId == &quot;&quot; &amp;&amp;  searchSpec == &quot;&quot; &amp;&amp; searchIOName != &quot;TNZ Product Catalog&quot; &amp;&amp; searchIOName != &quot;TNZ Collections&quot;)
+				TheApplication().RaiseErrorText(&quot;Missing PrimaryRowId and SearchSpecification.At least one of the two needs to be passed&quot;);
+			
+			if(methodName == &quot;QueryPage&quot;)
+			{
+				if(searchSpec == &quot;&quot; || searchSpec == null)
+					TheApplication().RaiseErrorText(&quot;Mandatory input parameter SearchSpecification is missing&quot;);
+			}
+			
+			psOutput.SetType(&quot;QueryOutput&quot;);
+			psInput.SetProperty(&quot;OutputIntObjectName&quot;, searchIOName);
+
+			if(searchSpec != &quot;&quot; &amp;&amp; searchSpec != null)
+			{
+				psInput.SetProperty(&quot;SearchSpec&quot;, searchSpec);
+			}
+
+			if(primaryRowId != &quot;&quot; &amp;&amp; primaryRowId != null)
+			{
+				psInput.SetProperty(&quot;PrimaryRowId&quot;, primaryRowId);	
+			}
+			
+			if(methodName == &quot;QueryPage&quot;)
+			{
+				if(sortSpecFieldLists != &quot;&quot; &amp;&amp; sortSpecModeLists != &quot;&quot;)
+				{
+					if (separator != &quot;&quot;)
+					{
+						sortSpecField = sortSpecFieldLists.split(separator);
+						sortSpecMode = sortSpecModeLists.split(separator);
+					}
+					else 
+					{
+						sortSpecField = sortSpecFieldLists.split(&quot;:&quot;);
+						sortSpecMode = sortSpecModeLists.split(&quot;:&quot;);
+					}
+				}
+
+				/* Created below to form a Sort Spec to be applied on BCs, as applicable */
+				if(sortSpecField.length &gt; 0 &amp;&amp; sortSpecMode.length &gt; 0 &amp;&amp; sortSpecField.length == sortSpecMode.length)
+				{
+					for (var j=0; j&lt;sortSpecField.length; j++)
+					{
+						sortSpec = sortSpec + sortSpecField[j] + &quot;(&quot; + sortSpecMode[j] + &quot;)&quot; + &quot;,&quot;;
+					}
+					sortSpec = sortSpec.substring(0, sortSpec.length - 1); // this is to remove the trailing comma (,)
+				}	
+				
+				psInput.SetProperty(&quot;NewQuery&quot;, newQuery);
+				psInput.SetProperty(&quot;StartRowNum&quot;, startRowNum);
+				psInput.SetProperty(&quot;PageSize&quot;, pageSize);
+				if(sortSpec != &quot;&quot; &amp;&amp; sortSpec != null)
+				{
+					psInput.SetProperty(&quot;SortSpec&quot;, sortSpec);
+				}
+			}
+
+			bsEAIAdapter.InvokeMethod(methodName, psInput, psOutput);
+			
+			Outputs.AddChild(psOutput);
+			Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully&quot;);
+		}
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		psOutput = null;
+		psInput = null;
+		bsEAIAdapter = null;
+	}
+}"
+			   SEQUENCE="8"
+			   UPDATED="08/01/2023 11:43:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:29"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="FindOneClickEligiblility"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function FindOneClickEligiblility(Inputs:PropertySet, Outputs:PropertySet)
+{
+	var cBO_Asset:chars = &quot;Asset Management&quot;;
+	var prodPartNum:chars = &quot;&quot;, serialNum:chars = &quot;&quot;, productName:chars = &quot;&quot;;
+	var assetIntegId:chars = Inputs.GetProperty(&quot;Integration Id&quot;);
+	var assetBO:BusObject = TheApplication().GetBusObject(cBO_Asset);
+	var assetBC:BusComp = assetBO.GetBusComp(&quot;Asset Mgmt - Asset - Simple&quot;);
+	var searchExpr:String = &quot;[TNZ Promotion Id]=&apos;&quot;+ assetIntegId +&quot;&apos; AND [Status] = &apos;Active&apos; AND [Type] = &apos;SIM Card&apos;&quot;;
+	
+	//Setting O/P Props
+	Outputs.SetProperty(&quot;SuccessFlag&quot;,&quot;N&quot;);
+	Outputs.SetProperty(&quot;Message&quot;,&quot;SIM Not Found for the Plan&quot;);
+	
+	try
+	{
+		with(assetBC)
+		{
+			SetViewMode(AllView);
+			ActivateField(&quot;Product Part Number&quot;);
+			ActivateField(&quot;Serial Number&quot;);
+			ClearToQuery(); 
+			SetSearchExpr(searchExpr);
+			ExecuteQuery(ForwardOnly); 
+			if(!FirstRecord())
+				TheApplication().RaiseErrorText(&quot;Active SIM not found for the Line!&quot;);
+			
+			else
+			{
+				prodPartNum = GetFieldValue(&quot;Product Part Number&quot;);
+				productName = GetFieldValue(&quot;Product Name&quot;);
+				serialNum = GetFieldValue(&quot;Serial Number&quot;);
+				
+				if((prodPartNum != &quot;&quot;) &amp;&amp; (prodPartNum == &quot;misc040527&quot; || prodPartNum == &quot;SIMSembleSPO&quot; || prodPartNum == &quot;SIMesimSPO&quot;))
+				{
+					Outputs.SetProperty(&quot;Message&quot;, &quot;SIM type &apos;&quot; +productName+ &quot;&apos; is not eligible for this journey. Please use the existing Modify Journey.&quot;);
+				}
+				
+				else
+				{
+					Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+					Outputs.SetProperty(&quot;Message&quot;, &quot;SIM Type Validation Success&quot;);
+				}
+			}
+		}
+	}
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	finally
+	{
+		Outputs.SetProperty(&quot;SIMNumber&quot;, serialNum);
+		assetBC = null;
+		assetBO = null;
+	}
+}"
+			   SEQUENCE="9"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="FindOpenOrder"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function FindOpenOrder(Inputs:PropertySet, Outputs:PropertySet)
+{
+	var assetIntId:chars = Inputs.GetProperty(&quot;Integration Id&quot;);
+	var cBO_NAME:chars = &quot;Order Entry - Line Items&quot;;
+	var psParentSet:PropertySet = TheApplication().NewPropertySet();
+	var psChildSet:PropertySet = TheApplication().NewPropertySet();
+	var sMessage:String = &quot;&quot;;
+	var currentRecord:bool = &quot;&quot;;
+	var orderItemBO:BusObject = TheApplication().GetBusObject(cBO_NAME);
+	var orderItemBC:BusComp = orderItemBO.GetBusComp(&quot;Order Entry - Line Items&quot;);
+	var orderItemSimpleBC:BusComp = orderItemBO.GetBusComp(&quot;Order Entry - Line Items (Simple)&quot;);
+	var searchExpr:String = &quot;[Asset Integration Id]=&apos;&quot;+ assetIntId +&quot;&apos; AND [Order Active Flag]=&apos;Y&apos; AND ([Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Abandoned&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Cancelled&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Complete&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Rejected&apos;))&quot;;
+	var searchExprVAS:String = &quot;[TNZ Gen Prod Instance Id]=&apos;&quot;+ assetIntId +&quot;&apos; AND [Product Type] = &apos;Bundled Promotions&apos; AND [Network Element Type] = &apos;VAS&apos; AND [Order Active Flag]=&apos;Y&apos; AND ([Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Abandoned&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Cancelled&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Complete&apos;) AND [Order Status] &lt;&gt; LookupValue(&apos;FS_ORDER_STATUS&apos;,&apos;Rejected&apos;))&quot;;
+	
+	//Setting O/P Props
+	Outputs.SetProperty(&quot;SuccessFlag&quot;,&quot;Y&quot;);
+	Outputs.SetProperty(&quot;Message&quot;,&quot;No Open Order Found&quot;);
+	
+	try
+	{
+		with(orderItemBC)
+		{
+			SetViewMode(AllView);
+			ClearToQuery(); 
+			SetSearchExpr(searchExpr);
+			ExecuteQuery(ForwardOnly); 
+			if(FirstRecord())
+			{
+				Outputs.SetProperty(&quot;SuccessFlag&quot;,&quot;N&quot;);
+				currentRecord = FirstRecord();
+				sMessage = sMessage + &quot;Please cancel or revise the existing order(s) to create a new one. See below: &quot;;
+				psParentSet.SetType(&quot;Drilldowns&quot;);
+				while(currentRecord)
+				{
+					psChildSet = TheApplication().NewPropertySet();
+					psChildSet.SetProperty(&quot;Id&quot;,GetFieldValue(&quot;Order Header Id&quot;));
+					psChildSet.SetProperty(&quot;Label&quot;,GetFieldValue(&quot;Order Number&quot;));
+					sMessage = sMessage + GetFieldValue(&quot;Order Number&quot;) + &quot;,&quot;;
+					psParentSet.AddChild(psChildSet);
+					psChildSet = null;
+					currentRecord = NextRecord();
+				}
+				Outputs.SetProperty(&quot;Message&quot;, sMessage);
+				Outputs.AddChild(psParentSet);
+			}
+			else
+			{
+				with(orderItemSimpleBC)
+				{
+					SetViewMode(AllView);
+					ClearToQuery();
+					ActivateField(&quot;Product Type&quot;); 
+					ActivateField(&quot;Network Element Type&quot;);
+					ActivateField(&quot;TNZ Gen Prod Instance Id&quot;);
+					ActivateField(&quot;Order Number&quot;);
+					ActivateField(&quot;Order Header Id&quot;);
+					SetSearchExpr(searchExprVAS);
+					ExecuteQuery(ForwardOnly); 
+					if(FirstRecord())
+					{
+						Outputs.SetProperty(&quot;SuccessFlag&quot;,&quot;N&quot;);
+						currentRecord = FirstRecord();
+						sMessage = sMessage + &quot;Please cancel or revise the existing VAS order(s) to create a new one. See below: &quot;;
+						psParentSet.SetType(&quot;Drilldowns&quot;);
+						while(currentRecord)
+						{
+							psChildSet = TheApplication().NewPropertySet();
+							psChildSet.SetProperty(&quot;Id&quot;,GetFieldValue(&quot;Order Header Id&quot;));
+							psChildSet.SetProperty(&quot;Label&quot;,GetFieldValue(&quot;Order Number&quot;));
+							sMessage = sMessage + GetFieldValue(&quot;Order Number&quot;) + &quot;,&quot;;
+							psParentSet.AddChild(psChildSet);
+							psChildSet = null;
+							currentRecord = NextRecord();
+						}
+						if(sMessage.charAt(sMessage.length - 1) == &quot;,&quot;) 
+						{
+							Outputs.SetProperty(&quot;Message&quot;, sMessage.substring(0,sMessage.length - 1));
+						}
+						else 
+						{
+							Outputs.SetProperty(&quot;Message&quot;, sMessage);
+						}
+						
+						Outputs.AddChild(psParentSet);
+					}
+				}
+			}// DS || Added for VAS Inflight
+		}
+	}
+
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+
+	finally
+	{
+		orderItemBC = null;
+		orderItemBO = null;
+		psParentSet = null;
+	}
+}"
+			   SEQUENCE="10"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetContactPreference"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here...  
+function GetContactPreference(Inputs,Outputs) {
+try
+ {
+ 
+	 var sBusObj, sBusComp, sBusCompPref, rowID  = &quot;&quot;, isRecord; 
+	 var uid = Inputs.GetProperty(&quot;UID&quot;)
+
+		sBusObj = TheApplication().GetBusObject(&quot;Contact&quot;);
+		sBusComp = sBusObj.GetBusComp(&quot;Contact&quot;);		
+		with(sBusComp)
+		{
+			ActivateField(&quot;Row Id&quot;);
+			ClearToQuery();
+			SetViewMode(AllView);
+			SetSearchSpec(&quot;TNZ External Contact Reference&quot;, uid);
+			ExecuteQuery(ForwardOnly);
+			isRecord = FirstRecord();
+			if(isRecord)
+			{
+		 		rowID = GetFieldValue(&quot;Row Id&quot;);		
+		 	}
+		} 
+		if(rowID != &quot;&quot; &amp;&amp; rowID != null){
+			sBusCompPref = sBusObj.GetBusComp(&quot;TNZ Communication Preference&quot;);
+			with(sBusCompPref) {
+				ActivateField(&quot;Medium Type&quot;);
+				ActivateField(&quot;Last Updated Datetime&quot;);
+				ActivateField(&quot;TNZ Alert Type&quot;);
+				ActivateField(&quot;TNZ Opt In&quot;);
+				ActivateField(&quot;Active&quot;);
+				ActivateField(&quot;TNZ Preferred Method&quot;);
+				ActivateField(&quot;TNZ Value&quot;);
+				ActivateField(&quot;TNZ Source&quot;);
+				ClearToQuery();
+				SetViewMode(AllView);
+    			SetSearchSpec(&quot;Person Id&quot;, rowID);
+    			ExecuteQuery(ForwardOnly);
+				isRecord = FirstRecord();
+    			if(isRecord) {						
+    		 		Outputs.SetProperty(&quot;MediumType&quot; ,GetFieldValue(&quot;Medium Type&quot;));
+					Outputs.SetProperty(&quot;LastUpdatedDatetime&quot; ,GetFieldValue(&quot;Last Updated Datetime&quot;));
+					Outputs.SetProperty(&quot;TNZAlertType&quot; ,GetFieldValue(&quot;TNZ Alert Type&quot;));
+					Outputs.SetProperty(&quot;Active&quot; ,GetFieldValue(&quot;Active&quot;));
+					Outputs.SetProperty(&quot;TNZPreferredMethod&quot; ,GetFieldValue(&quot;TNZ Preferred Method&quot;));
+					Outputs.SetProperty(&quot;TNZOptIn&quot; ,GetFieldValue(&quot;TNZ Opt In&quot;));
+					Outputs.SetProperty(&quot;TNZValue&quot; ,GetFieldValue(&quot;TNZ Value&quot;));
+					Outputs.SetProperty(&quot;TNZSource&quot; ,GetFieldValue(&quot;TNZ Source&quot;));
+    		 	}
+    		} 
+		}
+	}
+	catch(e)
+ 	{
+ 	   throw(e);
+ 	}
+ 	
+ 	finally
+ 	{
+	 	sBusComp = null;
+	 	sBusObj = null;
+		sBusCompPref = null;
+ 		
+	}
+}
+"
+			   SEQUENCE="13"
+			   UPDATED="08/01/2023 11:43:48"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:55:14"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetETFCharges"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetETFCharges (Inputs, Outputs)
+{
+	var accountId:chars = Inputs.GetProperty(&quot;AccountId&quot;);
+	var actionContext:chars = Inputs.GetProperty(&quot;Context&quot;);
+	var assetId:chars = Inputs.GetProperty(&quot;AssetId&quot;);
+	var targetPromoId:chars = Inputs.GetProperty(&quot;TargetPromotionId&quot;);
+	var netElementType:chars = Inputs.GetProperty(&quot;NET&quot;);
+	var accountPayType:chars = Inputs.GetProperty(&quot;PaymentType&quot;);
+	
+		//Setting Profile Attributes for further calculations/Order creations
+	TheApplication().SetProfileAttr(&quot;AccountId&quot;, accountId);
+	TheApplication().SetProfileAttr(&quot;Context&quot;, actionContext);
+	TheApplication().SetProfileAttr(&quot;AssetId&quot;, assetId);
+	TheApplication().SetProfileAttr(&quot;TargetPromotionId&quot;, targetPromoId);
+	
+	var searchStrOffrChangeFlag:String = &quot;[Status] = &apos;Complete&apos; AND [Last Month Flag] = &apos;Y&apos; AND [Billing Account Id] = &apos;&quot; + accountId + &quot;&apos; AND ([TNZ Order Aim] = &apos;Change Offer&apos; OR [TNZ Order Aim] = &apos;Mobile Migrate&apos;)&quot;;
+	var numOfRecords:chars;
+	var LOB:chars = &quot;&quot;, Segment:chars = &quot;&quot;, cBS_Name:chars = &quot;TNZ Disconnect ETC BS APP NG&quot;;
+	var cBO_Name:chars = &quot;Order Entry (Sales)&quot;;
+	var orderBO:BusObject = TheApplication().GetBusObject(cBO_Name);
+	var orderBC:BusComp = orderBO.GetBusComp(&quot;Order Entry - Orders&quot;);
+	var bsWPM:Service = TheApplication().GetService(&quot;Workflow Process Manager&quot;);
+	var bsETF:Service = TheApplication().GetService(cBS_Name); 
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+	
+		//O/P Prop Set Defaults
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);	
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+		
+	try
+	{
+		if(accountPayType == &quot;PREPAID&quot; || accountPayType == &quot;Prepaid&quot;)
+			TheApplication().RaiseErrorText(&quot;Charges not Applicable for Prepaid Accounts!&quot;);
+
+		if(accountId == &quot;&quot;) //Input Account Id missing
+			TheApplication().RaiseErrorText(&quot;Account Id is missing in the Request!&quot;);
+		
+		if(actionContext == &quot;&quot;) //Profile Attribute missing
+			TheApplication().RaiseErrorText(&quot;Context not found for the Action!&quot;);
+
+		if(assetId == &quot;&quot;) //Input Asset Id missing
+			TheApplication().RaiseErrorText(&quot;Asset Id is missing in the Request!&quot;);
+
+		if(targetPromoId == &quot;&quot; &amp;&amp; actionContext == &quot;Upgrade&quot;) //Input Target Promotion Id missing
+			TheApplication().RaiseErrorText(&quot;Target Promotion is missing in the Request for Change Offer!&quot;);
+	
+			//Checking ETF Eligibility based on Account LOB/Segment Type
+		psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Check ETF Account&quot;);
+		psInput.SetProperty(&quot;Object Id&quot;, accountId);
+		bsWPM.InvokeMethod(&quot;RunProcess&quot;, psInput, psOutput);
+		numOfRecords = psOutput.GetProperty(&quot;Rec&quot;);
+		LOB = psOutput.GetProperty(&quot;LOB&quot;);
+		Segment = psOutput.GetProperty(&quot;Segment&quot;);
+		
+		with(orderBC) //Checking Offer Changed in Last one month or not
+		{
+			SetViewMode(AllView);
+			ClearToQuery(); 
+			SetSearchExpr(searchStrOffrChangeFlag);
+			ExecuteQuery(ForwardOnly); 
+			
+			if(FirstRecord())
+				Outputs.SetProperty(&quot;OfferChangeLastMonthFlg&quot;, &quot;Y&quot;);
+			
+			else
+				Outputs.SetProperty(&quot;OfferChangeLastMonthFlg&quot;, &quot;N&quot;);
+		}
+		
+		if(ToNumber(numOfRecords) &gt; 0)
+		{
+			Outputs.SetProperty(&quot;ChargeAmount&quot;, &quot;&quot;);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;ETF Not Applicable for this Account as it&apos;s a &quot;+LOB+ &quot;/&quot;+Segment+&quot; type Account.&quot;);
+		}
+		
+		else if(actionContext == &quot;Upgrade&quot;) // Mobile/Wireless Change Offer Block
+		{
+			psInput.Reset();
+			psOutput.Reset();
+			psInput.SetProperty(&quot;Context&quot;, &quot;Upgrade&quot;);
+			psInput.SetProperty(&quot;AssetId&quot;, assetId);
+			psInput.SetProperty(&quot;OrderAim&quot;, &quot;Change Offer&quot;);
+			psInput.SetProperty(&quot;OrderAimContext&quot;, &quot;Change Offer&quot;);
+			psInput.SetProperty(&quot;NewPromId&quot;, targetPromoId);
+			psInput.SetProperty(&quot;vMode&quot;, &quot;&quot;);
+			bsETF.InvokeMethod(&quot;ChangeOffer&quot;, psInput, psOutput);
+			Outputs.SetProperty(&quot;ChargeAmount&quot;, psOutput.GetProperty(&quot;TNZChargeAmount&quot;));
+			Outputs.SetProperty(&quot;Message&quot;, &quot;ETF Calculated successfully&quot;);
+		}
+		
+		else if(actionContext == &quot;Disconnect&quot;)
+		{
+			psInput.Reset();
+			psOutput.Reset();
+			
+			if(netElementType == &quot;Mobile&quot; || netElementType == &quot;Fixed Wireless&quot;) // Mobile &amp; Wireless Terminate Block
+			{
+				psInput.SetProperty(&quot;Context&quot;, &quot;DiscMobPostpaid&quot;);
+				psInput.SetProperty(&quot;AssetId&quot;, assetId);
+				psInput.SetProperty(&quot;OrderAim&quot;, &quot;Terminate&quot;);
+				psInput.SetProperty(&quot;OrderAimContext&quot;, &quot;&quot;);
+				psInput.SetProperty(&quot;vMode&quot;, &quot;&quot;);
+				bsETF.InvokeMethod(&quot;DiscMobPostpaid&quot;, psInput, psOutput);
+				Outputs.SetProperty(&quot;ChargeAmount&quot;, psOutput.GetProperty(&quot;TNZChargeAmount&quot;));
+				Outputs.SetProperty(&quot;Message&quot;, &quot;ETF Calculated successfully&quot;);
+			}
+			
+			else if (netElementType == &quot;Fibre&quot;) // Fibre Terminate Block
+			{
+				psInput.SetProperty(&quot;Context&quot;, &quot;Disconnect&quot;);
+				psInput.SetProperty(&quot;AssetId&quot;, assetId);
+				psInput.SetProperty(&quot;OrderAim&quot;, &quot;Terminate&quot;);
+				psInput.SetProperty(&quot;OrderAimContext&quot;, &quot;Fibre&quot;);
+				psInput.SetProperty(&quot;vMode&quot;, &quot;&quot;);
+				bsETF.InvokeMethod(&quot;DisconnectFibre&quot;, psInput, psOutput);
+				Outputs.SetProperty(&quot;ChargeAmount&quot;, psOutput.GetProperty(&quot;TNZChargeAmount&quot;));
+				Outputs.SetProperty(&quot;Message&quot;, &quot;ETF Calculated successfully&quot;);
+			}
+			
+			else
+			{
+				TheApplication().RaiseErrorText(&quot;ETF Not Calculated for Network Element Type - &quot; + netElementType);
+			}
+		}
+		
+		else
+		{
+			TheApplication().RaiseErrorText(&quot;Action Context - &quot; + actionContext + &quot; is not Valid!&quot;);
+		}
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		TheApplication().SetProfileAttr(&quot;AccountId&quot;, &quot;&quot;);
+		TheApplication().SetProfileAttr(&quot;Context&quot;, &quot;&quot;);
+		TheApplication().SetProfileAttr(&quot;AssetId&quot;, &quot;&quot;);
+		TheApplication().SetProfileAttr(&quot;TargetPromotionId&quot;, &quot;&quot;);
+		orderBC = null;
+		orderBO = null;
+		psInput = null;
+		psOutput = null;
+		bsWPM = null;
+		bsETF = null;
+	}
+}"
+			   SEQUENCE="15"
+			   UPDATED="08/01/2023 11:43:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:28"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetEmployeeResponsibility"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here...  
+function GetEmployeeResponsibility(Inputs,Outputs) {
+try
+	{
+	var sBO;
+	var sBc;
+	var isRecord;
+	var sMvgBuscomp;
+	var sFlag = &quot;N&quot;;
+	var sUser = Inputs.GetProperty(&quot;UserId&quot;);
+	var sResponsibility = Inputs.GetProperty(&quot;ResponsibilityName&quot;);
+	sBO = TheApplication().GetBusObject(&quot;Employee&quot;);
+	sBc = sBO.GetBusComp(&quot;Employee&quot;);
+	if(sUser != &quot;&quot; &amp;&amp; sUser != null){
+		with(sBc)
+				{
+				SetViewMode(AllView);
+				ClearToQuery();
+				ActivateField(&quot;Position&quot;);
+				ActivateField(&quot;Login Name&quot;);
+				SetSearchSpec(&quot;Login Name&quot;, sUser);
+				ExecuteQuery(ForwardOnly);
+				isRecord = FirstRecord();
+				if(isRecord)
+					{
+					sMvgBuscomp = sBc.GetMVGBusComp(&quot;Responsibility&quot;);
+					 	with(sMvgBuscomp)
+					 		{
+								 SetViewMode(AllView);
+								 ClearToQuery();
+								 ActivateField(&quot;Name&quot;);
+								 SetSearchSpec(&quot;Name&quot;, sResponsibility);
+								 ExecuteQuery(ForwardOnly);
+								 if(FirstRecord())
+								 {
+									sFlag = &quot;Y&quot;;
+									
+								 }
+								else
+								{
+									sFlag = &quot;N&quot;;
+								}
+								Outputs.SetProperty(&quot;isResponsibility&quot; ,sFlag);
+					 		} // end of with(sMvgBuscomp)
+					 } // end of if(isRecord)
+				} // end of sBc
+			}
+		} // end of try
+		
+catch(e)
+	{
+	  TheApplication().RaiseErrorText(Clib.rsprintf(e.toString()));
+	}
+finally
+	{
+	sMvgBuscomp = null;
+	sBc = null;
+	sBO = null;
+	}
+
+}
+"
+			   SEQUENCE="14"
+			   UPDATED="08/01/2023 11:43:48"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/14/2019 15:39:41"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetSRAdminDetails"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetSRAdminDetails (Inputs:PropertySet, Outputs:PropertySet)
+{
+	var customerLOB:chars = Inputs.GetProperty(&quot;LOB&quot;);
+	var type:chars = Inputs.GetProperty(&quot;Type&quot;);
+	var category:chars = Inputs.GetProperty(&quot;Category&quot;);
+	var subCategory:chars = Inputs.GetProperty(&quot;SubCategory&quot;);
+	var UnderEnquiryFlag:chars = &quot;&quot;, DisputeFlag:chars = &quot;&quot;;
+	
+	var cBO_SR:chars = &quot;Service Request&quot;;
+	var serviceRequestBO:BusObject = TheApplication().GetBusObject(cBO_SR);
+	var serviceRequestBC:BusComp = serviceRequestBO.GetBusComp(&quot;Service Request&quot;);
+	var serviceRequestClassificnBC:BusComp = serviceRequestBO.GetBusComp(&quot;TNZ SR Classification Admin&quot;);
+	
+		//Setting o/p props
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	
+	try
+	{
+		if(customerLOB == &quot;&quot; || customerLOB == null)
+			TheApplication().RaiseErrorText(&quot;Input Argument Customer LOB Value is Missing in the Request!&quot;);
+		
+		if(type == &quot;&quot; || type == null)
+			TheApplication().RaiseErrorText(&quot;Input Argument Type Value is Missing in the Request!&quot;);
+		
+		if(category == &quot;&quot; || category == null)
+			TheApplication().RaiseErrorText(&quot;Input Argument Category Value is Missing in the Request!&quot;);
+		
+		if(subCategory == &quot;&quot; || subCategory == null)
+			TheApplication().RaiseErrorText(&quot;Input Argument Sub-Category Value is Missing in the Request!&quot;);
+		
+		with(serviceRequestClassificnBC)
+		{
+			ActivateField(&quot;TNZ SR Under Enquiry&quot;);
+			ActivateField(&quot;TNZ SR Disputable Flag&quot;);
+			ClearToQuery();
+			SetViewMode(AllView);
+			SetSearchExpr(&quot;[TNZ SR Line of Business] = &apos;&quot; + customerLOB + &quot;&apos; AND [TNZ SR Type] = &apos;&quot; + type + &quot;&apos; AND [TNZ SR Category] = &apos;&quot; + category + &quot;&apos; AND [TNZ SR Sub Category] = &apos;&quot; + subCategory + &quot;&apos;&quot;);
+			ExecuteQuery(ForwardOnly);
+			
+			if(FirstRecord()) 
+			{
+				UnderEnquiryFlag = GetFieldValue(&quot;TNZ SR Under Enquiry&quot;);
+				DisputeFlag = GetFieldValue(&quot;TNZ SR Disputable Flag&quot;);
+			}
+		}
+		Outputs.SetProperty(&quot;UnderEnquiryFlag&quot;, UnderEnquiryFlag);
+		Outputs.SetProperty(&quot;DisputeFlag&quot;, DisputeFlag);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully&quot;);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+	}
+
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		serviceRequestClassificnBC = null;
+		serviceRequestBC = null;
+		serviceRequestBO = null;
+	}	
+}"
+			   SEQUENCE="17"
+			   UPDATED="08/01/2023 11:43:50"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2020 16:50:56"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="NumberReserveMgmt"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function NumberReserveMgmt (Inputs, Outputs)
+{
+		//Working Items
+	var requestMode:chars = Inputs.GetProperty(&quot;RequestMode&quot;);
+	var requestAction:chars = Inputs.GetProperty(&quot;RequestAction&quot;);												   
+	var activeUser:chars = Inputs.GetProperty(&quot;ActiveUser&quot;);
+	var LSP:chars = Inputs.GetProperty(&quot;LSP&quot;);
+	var losingCarrierName:chars = Inputs.GetProperty(&quot;LosingCarrierName&quot;);
+	var customerAuthorization:chars = Inputs.GetProperty(&quot;CustomerAuthorization&quot;);
+	var lspAccountNumber:chars = Inputs.GetProperty(&quot;LSPAccountNumber&quot;);
+	var ipmsSOMId:chars = Inputs.GetProperty(&quot;IPMSSOMId&quot;);
+	var lspSIMNumber:chars = Inputs.GetProperty(&quot;LSPSIMNumber&quot;);
+	var orderId:chars = Inputs.GetProperty(&quot;OrderId&quot;);
+	var lineItemId:chars = Inputs.GetProperty(&quot;LineItemId&quot;);
+	var elid:chars = Inputs.GetProperty(&quot;ELID&quot;);
+	var netElmtType:chars = Inputs.GetProperty(&quot;NET&quot;);
+	var pagingKey:chars = Inputs.GetProperty(&quot;PagingKey&quot;);
+	var sNumber:chars = Inputs.GetProperty(&quot;sNumber&quot;);
+	var cBO_NAME:chars = &quot;Order Entry (Sales)&quot;;
+	var orderBO:BusObject = null, orderBC:BusComp = null, orderItemBC:BusComp = null;
+													  
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+	var wfService:Service = TheApplication().GetService(&quot;Workflow Process Manager&quot;);															
+	
+		//O/p Prop Set
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+		if(requestMode == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Request Mode is missing in the request!&quot;);
+		
+		if(requestMode == &quot;Reserve&quot;)
+		{
+			if(sNumber == &quot;&quot;)
+				TheApplication().RaiseErrorText(&quot;For Reserve Request, Number is mandatory!&quot;);
+			
+			if(netElmtType == &quot;&quot;)
+					TheApplication().RaiseErrorText(&quot;Network Element Type is mandatory to Reserve Number!&quot;);
+			
+			if(orderId == &quot;&quot;)
+				TheApplication().RaiseErrorText(&quot;For Reserve Request, Order Id is mandatory!!&quot;);
+			
+			if(lineItemId == &quot;&quot;)
+				TheApplication().RaiseErrorText(&quot;For Reserve Request, Line Item Id is mandatory!&quot;);
+	
+			orderBO = TheApplication().GetBusObject(cBO_NAME);
+			orderBC = orderBO.GetBusComp(&quot;Order Entry - Orders&quot;);
+			orderItemBC = orderBO.GetBusComp(&quot;Order Entry - Line Items&quot;);
+			orderItemBC.SetSearchSpec(&quot;Id&quot;, lineItemId);
+			with(orderBC)
+			{
+				InvokeMethod(&quot;SetAdminMode&quot;, &quot;TRUE&quot;);
+				ClearToQuery();
+				SetViewMode(AllView);
+				SetSearchSpec(&quot;Id&quot;, orderId);
+				ExecuteQuery(&quot;ForwardOnly&quot;);
+				if(!FirstRecord())
+					TheApplication().RaiseErrorText(&quot;Provided Order not found in system!&quot;);
+				
+				else
+				{
+					with(orderItemBC)
+					{
+						if(!FirstRecord())
+							TheApplication().RaiseErrorText(&quot;Provided Item not found in the Order!&quot;);
+
+						else if(requestAction == &quot;Port&quot;)
+						{
+							TheApplication().SetProfileAttr(&quot;Login Name&quot;, &quot;TNZ_INT_USER&quot;);
+							psInput.SetProperty(&quot;Object Id&quot;, lineItemId);
+							psInput.SetProperty(&quot;NET&quot;, netElmtType);
+							psInput.SetProperty(&quot;Number&quot;, sNumber);
+							psInput.SetProperty(&quot;Value&quot;, requestAction);
+							psInput.SetProperty(&quot;LosingServiceProvider&quot;, LSP);
+							psInput.SetProperty(&quot;LosingCarrierName&quot;, losingCarrierName);
+							psInput.SetProperty(&quot;CustAuthHeld&quot;, customerAuthorization);
+							psInput.SetProperty(&quot;LSP Accnt Id&quot;, lspAccountNumber);
+							psInput.SetProperty(&quot;IPMS SOM Id&quot;, ipmsSOMId);
+							psInput.SetProperty(&quot;LSP SIM Number&quot;, lspSIMNumber);
+							psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Fibre Allocate Specific Number&quot;);
+						}
+						
+						else
+						{
+							TheApplication().SetProfileAttr(&quot;IsToggle&quot;, &quot;Y&quot;);
+							psInput.SetProperty(&quot;Object Id&quot;, lineItemId);
+							psInput.SetProperty(&quot;ELID&quot;, elid);
+							psInput.SetProperty(&quot;NET&quot;, netElmtType);
+							psInput.SetProperty(&quot;Number&quot;, sNumber);
+							psInput.SetProperty(&quot;RequestMode&quot;, requestMode);
+							psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Fibre Manage Resource Reserve Num WF&quot;);
+						}
+					}
+				}
+			}
+		}
+		
+		if (requestMode == &quot;List&quot;)
+		{
+			if(netElmtType == &quot;&quot;)
+					TheApplication().RaiseErrorText(&quot;Network Element Type is mandatory to fetch numbers!&quot;);
+
+			if(sNumber != &quot;&quot;)
+			{
+				psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Fibre Manage Resource Retrieve Numbers WF&quot;); // Specific Number fetch
+				psInput.SetProperty(&quot;Number&quot;, sNumber);
+				psInput.SetProperty(&quot;RequestAction&quot;, &quot;New&quot;);
+			}
+			
+			else
+			{
+				psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Fibre Manage Resource Get Numbers WF&quot;); // Available Numbers fetch
+				psInput.SetProperty(&quot;NET&quot;, netElmtType);
+			}
+			
+			if(netElmtType == &quot;Mobile&quot;)
+				psInput.SetProperty(&quot;serviceType&quot;, &quot;CDMA&quot;);
+			
+			else
+				psInput.SetProperty(&quot;serviceType&quot;, &quot;NEAX&quot;);
+			
+			psInput.SetProperty(&quot;TNZ ELID&quot;, elid);
+			psInput.SetProperty(&quot;RequestMode&quot;, requestMode);
+			
+			if(pagingKey != &quot;&quot;)
+				psInput.SetProperty(&quot;PagingKey&quot;, pagingKey);
+		}
+		
+		wfService.InvokeMethod(&quot;RunProcess&quot;, psInput, psOutput);
+		if((sNumber != &quot;&quot;) &amp;&amp; requestMode == &quot;Reserve&quot;)
+		{
+				Outputs.SetProperty(&quot;Message&quot;, &quot;Provided Number is successfully Reserved and Updated!&quot;);
+		}
+		
+		else
+		{
+			psOutput = psOutput.GetChild(0).GetChild(0).GetChild(0);
+			Outputs.AddChild(psOutput);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;Number Fetch is Success!&quot;);
+		}
+	}
+	
+	catch(e)
+	{
+		TheApplication().SetProfileAttr(&quot;Login Name&quot;, activeUser);													
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		TheApplication().SetProfileAttr(&quot;IsToggle&quot;, &quot;&quot;);
+		TheApplication().SetProfileAttr(&quot;Login Name&quot;, activeUser);
+		psInput = null;
+		psOutput = null;
+		wfService = null;
+		orderItemBC = null;
+		orderBC = null;
+		orderBO = null;
+	}
+}"
+			   SEQUENCE="18"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="OpenPopUpApplet"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function OpenPopUpApplet(Inputs: PropertySet, Outputs: PropertySet) {
+	try {
+		var sHeaderId = Inputs.GetProperty(&quot;HeaderId&quot;);
+		TheApplication().SetProfileAttr(&quot;HeaderId&quot;, sHeaderId);
+		var cBO_SLMService: chars = &quot;SLM Save List Service&quot;;
+
+		var bsSLM = TheApplication().GetService(cBO_SLMService);
+		var psIn = TheApplication().NewPropertySet();
+		var psOut = TheApplication().NewPropertySet();
+
+		var height: chars = Inputs.GetProperty(&quot;height&quot;);
+		var width: chars = Inputs.GetProperty(&quot;width&quot;);
+		var appletname: chars = Inputs.GetProperty(&quot;appletname&quot;);
+		var appletmode: chars = Inputs.GetProperty(&quot;appletmode&quot;);
+
+		psIn.SetProperty(&quot;Applet Height&quot;, height);
+		psIn.SetProperty(&quot;Applet Mode&quot;, appletmode);
+		psIn.SetProperty(&quot;Applet Name&quot;, appletname);
+		psIn.SetProperty(&quot;Applet Width&quot;, width);
+		bsSLM.InvokeMethod(&quot;LoadPopupApplet&quot;, psIn, psOut);
+	}
+	catch(e) {
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	}
+
+	finally {
+		psIn = null;
+		psOut = null;
+		bsSLM = null;
+	}
+}"
+			   SEQUENCE="19"
+			   UPDATED="08/01/2023 11:43:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="01/29/2021 15:29:30"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="OutboundRestUtility"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function OutboundRestUtility(Inputs, Outputs)
+{
+/* ******************************************************************************
+Developer Name	: Indrasen[T975054]
+Project			: Future of Broadband
+Description		: Generic framework to invoke RestAPI, this will internally transform input SibelMsg to JsonRequest and 
+		trigger REST API then gives Response in ProcessProperty and JSON format
+
+Rev		Developer	Date		Reference#		ChangeComments
+REV01	Indrasen	15/03/2023	VSTS:2224907	Created New
+******************************************************************************* */
+	var oApp = TheApplication();
+	var svcBS = &quot;&quot;, jsonRqst = &quot;&quot;, psIn = oApp.NewPropertySet(), psOut = oApp.NewPropertySet();
+	var psBSIn = oApp.NewPropertySet(), psBSOut = oApp.NewPropertySet(), psFnOut = oApp.NewPropertySet();  
+	var RestURL = &quot;&quot;, TransactionId=&quot;&quot;, ReqstMethod=&quot;&quot;,Success=&quot;Y&quot;, ListOfArrayNodes=&quot;&quot;, JsonResponse=&quot;&quot;;
+	var utcDate=&quot;&quot;, currentDate = new Date();
+	var URLSysPrefName=&quot;&quot;, ResponseType=&quot;&quot;, AppendToSysPref=&quot;&quot;, TimeOut=&quot;&quot;;
+	var GenJsonRqst=&quot;&quot;, StatusCode=&quot;&quot;, APIflow=&quot;&quot;, APIErrMsg=&quot;&quot;;
+	var pat =/(\$*)/g;			//this pattern is to remove $ Dollar symbol
+	
+	try
+	{
+		RestURL			= Inputs.GetProperty(&quot;URL&quot;);
+		TransactionId	= Inputs.GetProperty(&quot;TransactionId&quot;); 
+		ReqstMethod 	= Inputs.GetProperty(&quot;RequestMethod&quot;);
+		ListOfArrayNodes = Inputs.GetProperty(&quot;ListOfArrayNodes&quot;);
+		URLSysPrefName  = Inputs.GetProperty(&quot;URLSystemPreferenceName&quot;);
+		ResponseType	= Inputs.GetProperty(&quot;ResponseType&quot;);
+		AppendToSysPref	= Inputs.GetProperty(&quot;AppendToSystemPreference&quot;);
+
+
+		if(RestURL == &quot;&quot; &amp;&amp; URLSysPrefName == &quot;&quot;)
+		{
+			Outputs.SetProperty(&quot;Error Message&quot;, &quot;Please provide mandatory &apos;URL&apos; OR &apos;URL System Preference Name&apos;.&quot;);
+			Success = &quot;N&quot;;
+			return (CancelOperation);
+		}
+		Outputs.SetProperty(&quot;ChildsCount_Rest-1&quot;, Inputs.GetChildCount());
+		if(Inputs.GetChildCount() &gt; 0 )
+		{
+			svcBS = oApp.GetService(&quot;EAI JSON Converter&quot;);
+			svcBS.InvokeMethod(&quot;SiebelMessageToJSON&quot;, Inputs, psOut);
+			GenJsonRqst = psOut.GetProperty(&quot;JSONstr&quot;);
+		}
+		else
+		{
+			GenJsonRqst = Inputs.GetProperty(&quot;JsonRequest&quot;);
+			if(ReqstMethod != &quot;GET&quot; &amp;&amp; (GenJsonRqst == &quot;&quot; || GenJsonRqst ==null))
+			{	
+				Outputs.SetProperty(&quot;Error Message&quot;, &quot;Please provide &apos;JsonRequest&apos;.&quot;);
+				Success = &quot;N&quot;;
+				return (CancelOperation);
+			}
+		}
+		jsonRqst = GenJsonRqst.replace(pat,&quot;&quot;);
+		Outputs.SetProperty(&quot;Generated JsonRequest&quot;, jsonRqst);	
+					
+		if (jsonRqst != null &amp;&amp; jsonRqst != &quot;&quot;)
+		{
+			utcDate = currentDate.toUTCString();
+			if(URLSysPrefName != &quot;&quot; &amp;&amp; RestURL == &quot;&quot;)
+			{
+				svcBS = null;
+				svcBS = oApp.GetService(&quot;PRM ANI Utility Service&quot;);
+				psIn.SetProperty(&quot;System Preference Name&quot;, URLSysPrefName);
+				svcBS.InvokeMethod(&quot;GetSystemPreference&quot;, psIn, psOut );	
+				RestURL = psOut.GetProperty(&quot;System Preference Value&quot;);
+				RestURL = RestURL+AppendToSysPref;
+			}
+
+			if(RestURL != null &amp;&amp; RestURL != &quot;&quot; )
+			{
+				svcBS = null; psIn.Reset(); 
+				svcBS = oApp.GetService(&quot;EAI HTTP Transport&quot;);
+
+				psIn.SetProperty(&quot;HDR_timeStamp&quot;, utcDate);
+				psIn.SetProperty(&quot;HDR_x-csr&quot;, oApp.GetProfileAttr(&quot;Login Name&quot;));
+				psIn.SetProperty(&quot;HDR_application&quot;, &quot;SIEBEL&quot;);
+				psIn.SetProperty(&quot;CharSetConversion&quot;, &quot;UTF-8&quot;);
+				psIn.SetProperty(&quot;HTTPAccept&quot;, &quot;application/json&quot;);
+				psIn.SetProperty(&quot;HTTPContentType&quot;, &quot;application/json;charset=UTF-16&quot;);
+				psIn.SetProperty(&quot;HDR_transactionId&quot;, TransactionId);
+				psIn.SetProperty(&quot;HTTPRequestMethod&quot;, ReqstMethod);
+				psIn.SetProperty(&quot;HTTPRequestURLTemplate&quot;, RestURL);
+				psIn.SetProperty(&quot;HTTPRequestBodyTemplate&quot;, jsonRqst);
+				
+			APIflow += &quot; 1 HDR_timeStamp=&quot;+utcDate+&quot; | &quot;;
+			APIflow += &quot; 2 HDR_x-csr=&quot;+oApp.GetProfileAttr(&quot;Login Name&quot;)+&quot; | &quot;;	
+			APIflow += &quot; 3 HDR_application=SIEBEL | &quot;;
+			APIflow += &quot; 4 CharSetConversion=UTF-8 | &quot;;
+			APIflow += &quot; 5 HTTPAccept=applicationjson | &quot;;
+			APIflow += &quot; 6 HTTPContentType=application/json;charset=UTF-16 | &quot;;
+			APIflow += &quot; 7 HDR_transactionId=&quot;+TransactionId+&quot; | &quot;;	
+			APIflow += &quot; 8 HTTPRequestMethod=&quot;+ReqstMethod+&quot; | &quot;;
+			APIflow += &quot; 9 HTTPRequestURLTemplate=&quot;+RestURL+&quot; | &quot;;				
+			APIflow += &quot; 10 HTTPRequestBodyTemplate=&quot;+jsonRqst+&quot; | &quot;;
+
+				svcBS.InvokeMethod(&quot;SendReceive&quot;, psIn, psOut ); // REST call.
+			
+				APIflow += &quot; :: SendReceive - invoked | &quot;;
+
+				TimeOut = psOut.GetProperty(&quot;TimedOut&quot;);
+				StatusCode = psOut.GetProperty(&quot;StatusCode&quot;);
+				Outputs.SetProperty(&quot;TimedOut&quot;, TimeOut.toUpperCase());
+				if(TimeOut.toUpperCase() == &quot;TRUE&quot;)
+				{
+					Success = &quot;N&quot;;
+					Outputs.SetProperty(&quot;Error Message&quot;, &quot;Time Out Exception.&quot;);
+					return (CancelOperation);
+				}
+				if(StatusCode != &quot;200&quot;)
+				{
+						Success = &quot;N&quot;;
+						Outputs.SetProperty(&quot;API Error Message&quot;, psOut.GetValue());
+				}
+				if(ResponseType == &quot;PropertySet&quot; || ResponseType == &quot;Both&quot;)
+				{
+					if(ResponseType == &quot;Both&quot;)
+					{
+						Outputs.SetProperty(&quot;JsonResponse&quot;, psOut.GetValue());
+						Outputs.SetValue(psOut.GetValue());	//SetOut REST API Response
+						Outputs.AddChild(psOut.Copy());
+					}
+					svcBS = null;
+					svcBS = oApp.GetService(&quot;TNZ EAI JSON Converter&quot;);
+					psBSIn.SetValue(psOut.GetValue());
+					svcBS.InvokeMethod(&quot;JSONToPropSet&quot;, psBSIn, psBSOut);
+
+					ParseJsonPropSet(psBSOut, psFnOut);
+
+					Outputs.SetType(&quot;JsonPropSet&quot;);
+					Outputs.AddChild(psBSOut.GetChild(0).GetChild(0));
+
+				}
+				else if (ResponseType == &quot;JSON&quot; || ResponseType == &quot;&quot;)//default
+				{
+					Outputs.SetProperty(&quot;JsonResponse&quot;, psOut.GetValue());	//SetOut REST API Response
+					Outputs.SetValue(psOut.GetValue());	//SetOut REST API Response
+					Outputs.AddChild(psOut.Copy());
+				}
+			}
+			else
+			{	Success = &quot;N&quot;; 
+				Outputs.SetProperty(&quot;Error Message&quot;, &quot;Please provide valid URL.&quot;);
+				return (CancelOperation);
+			}
+			
+		}//ifjsonrequest
+		else
+		{	Success = &quot;N&quot;;
+			Outputs.SetProperty(&quot;Error Message&quot;, &quot;Please provide &apos;JsonRequest&apos; OR &apos;SiebelMessage&apos;.&quot;);
+			return (CancelOperation);
+		}
+	}
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;OutboundRestUtility : e&quot;, e);
+		Outputs.SetProperty(&quot;Error Message&quot;, e);
+		Success = &quot;N&quot;;
+	}
+	finally
+	{
+		APIflow += &quot; | TimeOut=&quot;+TimeOut+&quot;| StatusCode=&quot;+ StatusCode;
+		if(StatusCode != &quot;200&quot;)
+		{
+			Outputs.SetProperty(&quot;API Error Message&quot;, psOut.GetValue());
+		}
+		Outputs.SetProperty(&quot;APIflow&quot;, APIflow );
+		Outputs.SetProperty(&quot;StatusCode&quot;, StatusCode );
+		Outputs.SetProperty(&quot;Success&quot;, Success );
+		currentDate =null; utcDate=null; svcBS=null;  psIn=null;  psOut=null; 
+		oApp=null; 
+	}
+}"
+			   SEQUENCE="20"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/23/2023 17:10:06"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ParseJsonPropSet"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ParseJsonPropSet(Inputs, Outputs)
+{
+/* ******************************************************************************
+Developer Name	: Indrasen[T975054]
+Project			: Future of Broadband
+Description		: this function will remove the DoubleQuote in PropSet Values whcih is output of JSONTOPropSet from JavaBS
+
+Rev		Developer	Date		Reference#		ChangeComments
+REV01	Indrasen	15/03/2023	VSTS:2224907	Created New
+******************************************************************************* */
+
+	var DQuotepat =/(\&quot;*)/g;	//this regex is to remove DoubleQuotes from string
+	var ChildCount , ps, psPropName, psPropValue, psChildCount;
+	try
+	{
+		ChildCount = Inputs.GetChildCount();
+	
+		if(ChildCount &gt; 0)
+		{
+			var x=0;
+			for (x=0; x&lt;ChildCount; x++)
+			{
+				ps = Inputs.GetChild(x);			
+				psPropName = ps.GetFirstProperty();
+				while(psPropName != &quot;&quot;)
+				{
+					psPropValue = ps.GetProperty(psPropName);
+					ps.SetProperty(psPropName, psPropValue.replace(DQuotepat, &quot;&quot;)); //replace
+
+					psPropName = ps.GetNextProperty();
+				}
+							//replace Child sequences with TypeNames
+				var psType, psT, pscTypeName, y=0;
+				psType = Inputs.GetChild(x).GetType();
+				if(psType.indexOf(&quot;ListOf-&quot;) &gt;= 0)
+				{
+					psT = psType.split(&quot;-&quot;);
+					pscTypeName = psT[1];
+					psChildCount = ps.GetChildCount();
+					
+					for(y=0; y &lt; psChildCount; y++)
+					{
+						ps.GetChild(y).SetType(pscTypeName);
+					}					
+					
+					Inputs.GetChild(x).SetType(psT[0]+psT[1]);
+				}
+				
+				psChildCount = ps.GetChildCount();
+				if(psChildCount &gt; 0)
+				{
+					ParseJsonPropSet(ps, Outputs);	//inherited function call
+				}
+			}
+		}
+	}
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Error: ParseJsonPropSet&quot;, e);
+	}
+	finally
+	{
+	}
+}"
+			   SEQUENCE="21"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/12/2023 16:07:52"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ParseJsonPropSetHier"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ParseJsonPropSetHier(Inputs, Outputs)
+{
+/* ******************************************************************************
+Developer Name	: Indrasen[T975054]
+Project			: Future of Broadband
+Description		: this function will remove ListOf* nodes and move its child ps to parent position. finally it will create Siebel PSHierarchy format from JSONPS
+
+Rev		Developer	Date		Reference#		ChangeComments
+REV01	Indrasen	20/04/2023	VSTS:2224905	Prase/format from JSONPS to SiebelPSHierarchy
+
+******************************************************************************* */
+	var ChildCount, ps, psPropName, psPropValue, psChildCount, psType;
+	var StringArr = &quot;&quot;;
+	var x = 0, y = 0;
+	try
+	{
+		ChildCount = Inputs.GetChildCount();
+		if (ChildCount &gt; 0) 
+        {
+			Num++;
+            //StringArr += &quot;\n&quot;+&quot;| &quot; + Num + &quot;:type=&quot; + Inputs.GetType() + &quot;:childCnt=&quot; + Inputs.GetChildCount();
+			for (x = 0; x &lt; ChildCount; x++) 
+            {
+                ps = Inputs.GetChild(x);
+                psType = Inputs.GetChild(x).GetType();	//StringArr += &quot; -x-&quot; + x + &quot; for-psType=&quot; + psType;
+                if (psType.indexOf(&quot;ListOf&quot;) &gt;= 0) 
+                {
+
+                    psChildCount = ps.GetChildCount();
+                    if (psChildCount == 0) 
+                    {
+                        Inputs.RemoveChild(x);			//StringArr += &quot; --REMOVED -&quot; + psType + &quot; @&quot; + x + &quot; ~ &quot;;
+                        x = x - 1;
+                        ChildCount = Inputs.GetChildCount();
+                    }
+                    else 
+                    {
+                        for (y = 0; y &lt; psChildCount; y++) 
+                        {
+                            Inputs.AddChild(ps.GetChild(y).Copy());	//Moving to Parent Node
+                        }
+                        for (y = 0; y &lt; psChildCount; y++) 
+                        {
+                            ps.RemoveChild(y);
+
+                            psChildCount = ps.GetChildCount();	//Deleting which are already copied to parent node
+                            y = y - 1;
+                        }
+                    }
+                    //StringArr += &quot; --DONE @&quot; + x + &quot; ~ &quot;;
+                }
+                psChildCount = ps.GetChildCount();
+                if (psChildCount &gt; 0) 
+                {	//StringArr += &quot;\n&quot;+&quot;##LOOOP Num=&quot; + Num + &quot;:B4LoopPsT=&quot; + ps.GetType();
+					ParseJsonPropSetHier(ps, Outputs); //inherited function call
+                }
+			}
+		}
+	}
+	catch (e) 
+    {
+       StringArr += &quot; ***** ERROR ***** &quot;+e.toString(); 
+	   Outputs.SetProperty(&quot;Error: ParseJsonPropSetHier&quot;, StringArr);
+    }
+    finally 
+    {
+        
+    }
+
+}"
+			   SEQUENCE="22"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/08/2023 10:32:43"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="PortInValidations"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function PortInValidations (Inputs, Outputs) 
+{
+    try 
+	{
+		var sContext:chars = Inputs.GetProperty(&quot;OrderAimContext&quot;);
+		var sOrderAim:chars = Inputs.GetProperty(&quot;OrderAim&quot;);
+        var reserveSpecNum:chars = Inputs.GetProperty(&quot;sNumber&quot;);
+        var reserveContext:chars = Inputs.GetProperty(&quot;RequestAction&quot;);
+        var reserveLSP:chars = Inputs.GetProperty(&quot;LSP&quot;);
+        var reserveLSPAccnt:chars = Inputs.GetProperty(&quot;LSPAccountNumber&quot;);
+        var reserveLC:chars = Inputs.GetProperty(&quot;LosingCarrierName&quot;);
+        var reserveIPMS:chars = Inputs.GetProperty(&quot;IPMSSOMId&quot;);
+        var reserveLSPSIM:chars = Inputs.GetProperty(&quot;LSPSIMNumber&quot;);
+        var OrderItemId:chars = Inputs.GetProperty(&quot;LineItemId&quot;);
+		var cBSGetMsg_Name:chars = &quot;TNZ Get Customer Message BS&quot;;
+        var MessgeBS:Service = TheApplication().GetService(cBSGetMsg_Name);
+        var ErrorMsg:chars = &quot;&quot;;
+		var strLength:Number = 0;
+		var strChk:chars = &quot;&quot;;
+		var lengthChk:chars = &quot;&quot;;
+		var strBegin:chars = &quot;&quot;;
+		var strOrderAimLOV:chars = &quot;&quot;;
+		var strOrderAimContextLOV:chars = &quot;&quot;;
+		var strOrderAimModifyLOV:chars = &quot;&quot;;
+		var LSP_1:chars = &quot;&quot;, LSP_2:chars = &quot;&quot;, LSP_3:chars = &quot;&quot;;
+		var strOrderAimLOVCN:chars = &quot;&quot;;
+		var strOrderAimLOVCNCO:chars = &quot;&quot;;
+		var strOrderAimContextLOVCN:chars = &quot;&quot;;
+
+			//O/p Prop Set
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+
+        //boLTE - Validation for Port In - SB:03/02/2016
+        var sOrderItemsBusObj = TheApplication().GetBusObject(&quot;Order Entry - Line Items&quot;);
+        var sOrderItemBC = sOrderItemsBusObj.GetBusComp(&quot;Order Entry - Line Items&quot;);
+
+        sOrderItemBC.ActivateField(&quot;Part Number&quot;);
+        sOrderItemBC.SetViewMode(AllView);
+        sOrderItemBC.ClearToQuery();
+        sOrderItemBC.SetSearchSpec(&quot;Id&quot;, OrderItemId);
+        sOrderItemBC.SetSearchSpec(&quot;Part Number&quot;, &quot;misc040789&quot;); //boLTE Part Number
+        sOrderItemBC.ExecuteQuery(ForwardOnly);
+        if (sOrderItemBC.FirstRecord()) 
+		{
+            if (reserveContext == &quot;Port&quot;)
+                TheApplication().RaiseErrorText(&quot;Port-In cannot be performed on the mobile number associated to BoLTE Service Specifcation&quot;);
+        }
+
+        var psIn = TheApplication().NewPropertySet();
+        var psOut = TheApplication().NewPropertySet();
+
+        if (reserveSpecNum.length == 0 &amp;&amp; reserveContext.length == 0) 
+		{
+            psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-1055&quot;);
+            MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+            ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+            TheApplication().RaiseErrorText(ErrorMsg);
+        } 
+		
+		else 
+		{
+            if (reserveSpecNum.length == 0 || isNaN(reserveSpecNum)) 
+			{
+                if (reserveContext.length == 0) 
+				{
+                    psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2056&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);
+                }
+
+				else 
+				{
+                    if (reserveContext == &quot;Port&quot;) 
+					{
+                        if (reserveLSP.length == 0) 
+						{
+                            psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2057&quot;);
+                            MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                            ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                            TheApplication().RaiseErrorText(ErrorMsg);
+                        } 
+						
+						else 
+						{
+                            if (reserveLSPAccnt != 0 || reserveLSPSIM != 0) 
+							{
+                                if (reserveSpecNum.length == 0 || isNaN(reserveSpecNum)) 
+								{
+                                    psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-1057&quot;);
+                                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                                    ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                                    TheApplication().RaiseErrorText(ErrorMsg);
+                                }
+                            } 
+							
+							else 
+							{
+                                psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2057&quot;);
+                                MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                                ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                                TheApplication().RaiseErrorText(ErrorMsg);
+                            }
+                        }
+                    } 
+					
+					else if (reserveContext == &quot;Emergency Return&quot;) 
+					{
+                        if (reserveLSP.length == 0 || reserveIPMS.length == 0) 
+						{
+                            psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2071&quot;);
+                            MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                            ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                            TheApplication().RaiseErrorText(ErrorMsg);
+                        }
+                    } 
+					
+					else 
+					{
+                        psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-1057&quot;);
+                        MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                        ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                        TheApplication().RaiseErrorText(ErrorMsg);
+                    }
+                }
+            }
+        }
+
+        if (reserveContext.length == 0) 
+		{
+            psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-1058&quot;);
+            MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+            ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+            TheApplication().RaiseErrorText(ErrorMsg);
+        }
+       
+
+        if (reserveContext == &quot;Port&quot;) 
+		{
+            LSP_1 = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_LSP_TYPE&quot;, &quot;2degrees (Mobile)&quot;)
+            LSP_2 = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_LSP_TYPE&quot;, &quot;SKINNY&quot;)
+            LSP_3 = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_LSP_TYPE&quot;, &quot;Vodafone NZ Mobile&quot;)
+            strOrderAimLOV = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM&quot;, &quot;New Connect&quot;);
+            strOrderAimLOVCN = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM&quot;, &quot;Modify&quot;);
+            strOrderAimLOVCNCO = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM&quot;, &quot;Change Promotion&quot;);
+            strOrderAimContextLOV = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM_CONTEXT&quot;, &quot;Transfer/Port In&quot;);
+            strOrderAimContextLOVCN = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM_CONTEXT&quot;, &quot;Change Number&quot;);
+
+            if ((sContext == strOrderAimContextLOV &amp;&amp; sOrderAim == strOrderAimLOV) || (sContext == strOrderAimContextLOVCN &amp;&amp; sOrderAim == strOrderAimLOVCN) || (sContext == strOrderAimContextLOVCN &amp;&amp; sOrderAim == strOrderAimLOVCNCO)) 
+			{
+                if (reserveLSP.length == 0) 
+				{
+                    psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2061&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);
+                } 
+				
+				else 
+				{
+                    if (reserveLSPAccnt.length != 0 || reserveLSPSIM.length != 0) 
+					{
+					}
+					
+					else 
+					{
+                        psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2061&quot;);
+                        MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                        ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                        TheApplication().RaiseErrorText(ErrorMsg);
+                    }
+                }
+				
+                // GS:20/07/2016 Uncommented below code for INC000000544539 fix.
+                if (reserveLSPAccnt.length != 0 &amp;&amp; reserveLSPSIM.length != 0) 
+				{
+                    psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2062&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);
+                }
+
+                if (reserveLSP == LSP_1) 
+				{
+                    if (reserveLSPSIM.length != 0) 
+					{
+                        strChk = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_PORT_IN_VALID_LSPN_TYPE&quot;, &quot;2degrees (Mobile)&quot;);
+                        lengthChk = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_PORT_IN_VALID_LSPL_TYPE&quot;, &quot;2degrees (Mobile)&quot;);
+                        strBegin = reserveLSPSIM.substring(0, 6);
+                        strLength = reserveLSPSIM.length;
+
+                        if (lengthChk != strLength) 
+						{
+                            if (strBegin != strChk) 
+							{
+                                TheApplication().RaiseErrorText(&quot;A 2Degrees SIM # must start with 896424 and be 18 digits long&quot;);
+                            }
+
+                            TheApplication().RaiseErrorText(&quot;A 2Degrees SIM # must start with 896424 and be 18 digits long&quot;);
+                        }
+						
+						else 
+						{
+                            if (strBegin != strChk) 
+							{
+                                TheApplication().RaiseErrorText(&quot;A 2Degrees SIM # must start with 896424 and be 18 digits long&quot;);
+                            }
+                        }
+                    }
+					
+                    if (reserveLSPAccnt.length != 0) 
+					{
+                        strLength = reserveLSPAccnt.length;
+                        if (strLength &lt; 4 || strLength &gt; 9) 
+						{
+                            TheApplication().RaiseErrorText(&quot;A 2Degrees Account # must be between 4 and 9 characters long&quot;);
+                        }
+                    }
+                }
+
+                if (reserveLSP == LSP_2) 
+				{
+                    if (reserveLSPSIM.length != 0) 
+					{
+                        strChk = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_PORT_IN_VALID_LSPN_TYPE&quot;, &quot;SKINNY&quot;);
+                        lengthChk = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_PORT_IN_VALID_LSPL_TYPE&quot;, &quot;SKINNY&quot;);
+                        strBegin = reserveLSPSIM.substring(0, 6);
+                        strLength = reserveLSPSIM.length;
+
+                        if (lengthChk != strLength) 
+						{
+                            if (strBegin != strChk) 
+							{
+                                TheApplication().RaiseErrorText(&quot;LSP SIM# should have length &quot; + lengthChk + &quot; and should start with &quot; + strChk + &quot; for LSP: &quot; + reserveLSP);
+                            }
+
+                            TheApplication().RaiseErrorText(&quot;LSP SIM# should have length &quot; + lengthChk + &quot; for LSP: &quot; + reserveLSP);
+                        } 
+						
+						else 
+						{
+                            if (strBegin != strChk) 
+							{
+                                TheApplication().RaiseErrorText(&quot;LSP SIM# should should start with &quot; + strChk + &quot; for LSP: &quot; + reserveLSP);
+                            }
+                        }
+                    }
+					
+                    if (reserveLSPAccnt.length != 0) 
+					{
+                        TheApplication().RaiseErrorText(&quot;Please check LSP details are correct. Skinny LSP account number should be blank&quot;);
+                    }
+                }
+
+                if (reserveLSP == LSP_3) 
+				{
+                    if (reserveLSPSIM.length != 0) 
+					{
+                        strChk = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_PORT_IN_VALID_LSPN_TYPE&quot;, &quot;Vodafone NZ Mobile&quot;);
+                        strBegin = reserveLSPSIM.substring(0, 4);
+                        strLength = reserveLSPSIM.length;
+
+                        if (strLength == 12) 
+						{
+                            if (strBegin == strChk) 
+							{
+                                TheApplication().RaiseErrorText(&quot;Please check Vodafone SIM#. Should be first 12 digits or first 16 digits starting from &apos;6401&apos;&quot;);
+                            }
+                        } 
+						
+						else 
+						{
+                            if (strLength == 16) 
+							{
+                                if (strBegin != strChk) 
+								{
+                                    TheApplication().RaiseErrorText(&quot;Please check Vodafone SIM#. Should be first 12 digits or first 16 digits starting from &apos;6401&apos;&quot;);
+                                }
+                            } 
+							
+							else 
+							{
+                                TheApplication().RaiseErrorText(&quot;Please check Vodafone SIM#. Should be first 12 digits or first 16 digits starting from &apos;6401&apos;&quot;);
+                            }
+                        }
+                    }
+
+                    if (reserveLSPAccnt.length != 0) 
+					{
+                        strLength = reserveLSPAccnt.length;
+                        if (strLength != 9) 
+						{
+                            TheApplication().RaiseErrorText(&quot;A Vodafone account number must be 9 digits long&quot;);
+                        }
+                    }
+                }
+            } 
+			
+			else 
+			{
+                if (sOrderAim == strOrderAimLOV) 
+				{
+                    /*psIn.SetProperty(&quot;MessageId&quot;,&quot;TNZ-ERR-2058&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg= psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);*/
+                    TheApplication().RaiseErrorText(&quot;Please select Order Type: &quot; + strOrderAimLOV + &quot; and Order Sub-Type: &quot; + strOrderAimContextLOV + &quot; for Reservation Context: Port&quot;);
+                } 
+				
+				else 
+				{
+                    /*psIn.SetProperty(&quot;MessageId&quot;,&quot;TNZ-ERR-3058&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg= psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);*/
+                    TheApplication().RaiseErrorText(&quot;Please select Order Type: &quot; + strOrderAimLOVCN + &quot;/&quot; + strOrderAimLOVCNCO + &quot; and Order Sub-Type: &quot; + strOrderAimContextLOVCN + &quot; for Reservation Context: Port&quot;);
+                }
+            }
+        }
+
+        if (reserveContext == &quot;Emergency Return&quot;) 
+		{
+            strOrderAimLOV = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM&quot;, &quot;New Connect&quot;);
+            strOrderAimModifyLOV = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM&quot;, &quot;Modify&quot;);
+            strOrderAimContextLOV = TheApplication().InvokeMethod(&quot;LookupValue&quot;, &quot;TNZ_ORDER_AIM_CONTEXT&quot;, &quot;Emergency Return&quot;);
+
+            if ((sContext == strOrderAimContextLOV &amp;&amp; sOrderAim == strOrderAimLOV) || (sOrderAim == strOrderAimModifyLOV)) 
+			{
+                if (reserveLSP.length == 0 || reserveIPMS.length == 0) 
+				{
+                    psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2072&quot;);
+                    MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                    ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                    TheApplication().RaiseErrorText(ErrorMsg);
+                }
+                /*	else    //SB:20-Nov-2015-Remediation Fix
+                {
+                if(reserveLSPAccnt.length!=0 || reserveLSPSIM.length!=0) //SB:20-Nov-2015-Remediation Fix
+                {}
+                else
+                {
+                psIn.SetProperty(&quot;MessageId&quot;,&quot;TNZ-ERR-2061&quot;);
+                MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                ErrorMsg= psOut.GetProperty(&quot;CustomerMessage&quot;);
+                TheApplication().RaiseErrorText(ErrorMsg);
+                }				
+                }
+
+                if(reserveLSPAccnt.length !=0 &amp;&amp; reserveLSPSIM.length !=0)
+                {
+                psIn.SetProperty(&quot;MessageId&quot;,&quot;TNZ-ERR-2081&quot;);
+                MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                ErrorMsg= psOut.GetProperty(&quot;CustomerMessage&quot;);
+                TheApplication().RaiseErrorText(ErrorMsg);				
+                }	
+                */
+
+            } 
+			
+			else 
+			{
+                psIn.SetProperty(&quot;MessageId&quot;, &quot;TNZ-ERR-2059&quot;);
+                MessgeBS.InvokeMethod(&quot;GetCustomerMessage&quot;, psIn, psOut);
+                ErrorMsg = psOut.GetProperty(&quot;CustomerMessage&quot;);
+                TheApplication().RaiseErrorText(ErrorMsg);
+            }
+        }
+
+    } 
+	
+	catch (e) 
+	{
+        Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+    } 
+	
+	finally 
+	{
+        sOrderItemBC = null;
+        sOrderItemsBusObj = null;
+        psOut = null;
+        psIn = null;
+        MessgeBS = null;
+    }
+}"
+			   SEQUENCE="23"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2020 12:48:18"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ProductAvailabilityCheck"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ProductAvailabilityCheck (Inputs:PropertySet, Outputs:PropertySet)
+{
+	try
+	{
+		var ELID:chars = Inputs.GetProperty(&quot;ELID&quot;);
+		var Login:chars = Inputs.GetProperty(&quot;Login&quot;);
+		var SiteName:chars = Inputs.GetProperty(&quot;SiteName&quot;);
+		var AddressLine1:chars = Inputs.GetProperty(&quot;AddressLine1&quot;);
+		var AddressLine2:chars = Inputs.GetProperty(&quot;AddressLine2&quot;);
+		var AddressLine3:chars = Inputs.GetProperty(&quot;AddressLine3&quot;);
+		var AddressLine4:chars = Inputs.GetProperty(&quot;AddressLine4&quot;);
+		var City:chars = Inputs.GetProperty(&quot;City&quot;);
+		var PostCode:chars = Inputs.GetProperty(&quot;PostCode&quot;);  
+		var Latitude:chars = Inputs.GetProperty(&quot;Latitude&quot;);
+		var Longitude:chars = Inputs.GetProperty(&quot;Longitude&quot;);
+		var PAHeaderId:chars = Inputs.GetProperty(&quot;PAHeaderId&quot;);
+		var CustomerId:chars = Inputs.GetProperty(&quot;CustomerId&quot;);
+
+		var Operation:chars = Inputs.GetProperty(&quot;Operation&quot;); 
+		var AddressId:chars = Inputs.GetProperty(&quot;AddressId&quot;); 
+		var Status:chars = Inputs.GetProperty(&quot;Status&quot;);
+
+		var bsWFService:Service = TheApplication().GetService(&quot;Workflow Process Manager&quot;);
+		var psInput:PropertySet = TheApplication().NewPropertySet();
+		var psOutput:PropertySet = TheApplication().NewPropertySet();
+	
+		psInput.SetProperty(&quot;SiteName&quot;, SiteName);
+		psInput.SetProperty(&quot;AddressLine1&quot;, AddressLine1);
+		psInput.SetProperty(&quot;AddressLine2&quot;, AddressLine2);
+		psInput.SetProperty(&quot;AddressLine3&quot;, AddressLine3);
+		psInput.SetProperty(&quot;AddressLine4&quot;, AddressLine4);
+		psInput.SetProperty(&quot;City&quot;, City);
+		psInput.SetProperty(&quot;PostCode&quot;, PostCode);
+		psInput.SetProperty(&quot;Latitude&quot;, Latitude);
+		psInput.SetProperty(&quot;Longitude&quot;, Longitude);
+		psInput.SetProperty(&quot;Login&quot;, Login);
+		psInput.SetProperty(&quot;ELID&quot;, ELID);
+		psInput.SetProperty(&quot;Mode&quot;, &quot;RestAPI&quot;);
+
+		psInput.SetProperty(&quot;Object Id&quot;, PAHeaderId);
+		psInput.SetProperty(&quot;PAHeaderId&quot;, PAHeaderId);
+		psInput.SetProperty(&quot;CustomerId&quot;, CustomerId);
+		psInput.SetProperty(&quot;AddressId&quot;, AddressId);
+		psInput.SetProperty(&quot;Status&quot;, Status);
+		psInput.SetProperty(&quot;Operation&quot;, Operation);
+
+		psInput.SetProperty(&quot;ProcessName&quot;, &quot;TNZ Presales Product Availability Rest API WF&quot;);	
+	
+		bsWFService.InvokeMethod(&quot;RunProcess&quot;, psInput, psOutput);
+	
+		Outputs.AddChild(psOutput);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully&quot;);
+
+	}	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	}
+			
+	finally 
+	{
+		psInput=null;
+		psOutput=null;
+		bsWFService=null;
+	}						
+}"
+			   SEQUENCE="24"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/13/2020 13:15:32"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="RSTTQuery"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function RSTTQuery (Inputs:PropertySet, Outputs:PropertySet)
+{
+	var boName:chars = Inputs.GetProperty(&quot;BOName&quot;);
+	var bcName:chars = Inputs.GetProperty(&quot;BCName&quot;);
+	var searchSpecification:chars = Inputs.GetProperty(&quot;SearchSpecification&quot;);
+	var outputFields = Inputs.GetProperty(&quot;outputFields&quot;);
+	var cBS_RSTT:chars = &quot;Row Set Transformation Toolkit&quot;;
+	var onMatch1:chars = &quot;{Output Row Set} += New(&apos;Row&apos;,&quot;;
+	var arrayFields = new Array();
+
+	var bsRSTT:Service = TheApplication().GetService(cBS_RSTT);
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+	var psHierarchy:PropertySet = TheApplication().NewPropertySet();
+	
+		//Setting O/P Property
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+		if(boName == &quot;&quot; || boName == null) 
+			TheApplication().RaiseErrorText(&quot;Input Argument BO Name Value is Missing in the Request!&quot;);
+		
+		if(bcName == &quot;&quot; || bcName == null) 
+			TheApplication().RaiseErrorText(&quot;Input Argument BC Name Value is Missing in the Request!&quot;);
+		
+		if(searchSpecification == &quot;&quot; || searchSpecification == null)
+			TheApplication().RaiseErrorText(&quot;Input Argument Search Specification Value is missing in the Request!&quot;);
+		
+		if(outputFields == &quot;&quot; || outputFields == null)
+			TheApplication().RaiseErrorText(&quot;Field Values for On Match Property are missing in the Request!&quot;);
+		
+		else
+		{
+			arrayFields = outputFields.split(&apos;,&apos;);
+			for(var i=0; i&lt;arrayFields.length; i++)
+			{
+				onMatch1 = (i &lt; arrayFields.length-1) ? onMatch1 + &quot;[&quot; + arrayFields[i] + &quot;]={Match.&quot; + arrayFields[i] + &quot;},&quot; : onMatch1 + &quot;[&quot; + arrayFields[i] + &quot;]={Match.&quot; + arrayFields[i] + &quot;})&quot;;
+			}
+		}
+	
+		psHierarchy.SetType(&quot;Output Row Set&quot;);
+		psInput.AddChild(psHierarchy);
+		
+		psInput.SetProperty(&quot;Business Object&quot;, boName);
+		psInput.SetProperty(&quot;Business Component&quot;, bcName);
+		psInput.SetProperty(&quot;Cache Enabled&quot;, &quot;N&quot;);
+		psInput.SetProperty(&quot;Search Specification&quot;, searchSpecification);
+		psInput.SetProperty(&quot;On Match 1&quot;, onMatch1);
+
+		bsRSTT.InvokeMethod(&quot;Query Transform&quot;, psInput, psOutput);
+		
+		Outputs.AddChild(psOutput);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully&quot;);
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		psHierarchy = null;
+		psOutput = null;
+		psInput = null;
+		bsRSTT = null;
+	}
+}"
+			   SEQUENCE="26"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2020 16:50:55"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="ReserveFirstNumber"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function ReserveFirstNumber(Inputs:PropertySet, Outputs:PropertySet)
+{
+	TheApplication().SetProfileAttr(&quot;IsToggle&quot;, &quot;Y&quot;);
+	var sNumber:chars = Inputs.GetProperty(&quot;sNumber&quot;);
+	var documentId:chars = Inputs.GetProperty(&quot;OrderId&quot;);
+	var lineItemId:chars = Inputs.GetProperty(&quot;LineItemId&quot;);
+	var psInput:PropertySet = TheApplication().NewPropertySet();
+	var psOutput:PropertySet = TheApplication().NewPropertySet();
+	var wfService:Service = TheApplication().GetService (&quot;Workflow Process Manager&quot;);
+
+	//Setting O/P props
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+		if(documentId == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Order Id missing in the request&quot;);
+	
+		if(lineItemId == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Line Item Id missing in the request&quot;);
+
+		//Setting I/P props
+		if(sNumber != &quot;&quot;)
+			psInput.SetProperty(&quot;Number&quot;, sNumber);
+		
+		psInput.SetProperty(&quot;Object Id&quot;, documentId);
+		psInput.SetProperty(&quot;LineItemId&quot;, lineItemId);
+		psInput.SetProperty(&quot;ProcessName&quot;,&quot;TNZ One Click Number Reservation WF&quot;);
+		wfService.InvokeMethod(&quot;RunProcess&quot;, psInput,psOutput);
+		Outputs.SetProperty(&quot;SuccessFlag&quot;,&quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;First available number reserved successfully&quot;);
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally 
+	{
+		psInput=null;
+		psOutput=null;
+		wfService=null;
+		TheApplication().SetProfileAttr(&quot;IsToggle&quot;, &quot;&quot;);
+	}
+}"
+			   SEQUENCE="25"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="RunBusinessService"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function RunBusinessService(Inputs: PropertySet, Outputs: PropertySet)
+{
+	try
+	{
+		// Fetching arguments
+		var inputBS: chars = Inputs.GetProperty(&quot;ServiceName&quot;);
+		var bsName: Service = TheApplication().GetService(inputBS);
+		var inputMethod: chars = Inputs.GetProperty(&quot;MethodName&quot;);
+		var inputPSCopy: PropertySet = Inputs.Copy(); // Copying to another prop set to specify the BS Method&apos;s Input Prop set
+		// Removing the below props just to segregate the BS Method&apos;s Input Prop set
+		inputPSCopy.RemoveProperty(&quot;ServiceName&quot;);
+		inputPSCopy.RemoveProperty(&quot;MethodName&quot;);
+		
+		var outputPS: PropertySet = TheApplication().NewPropertySet();
+		
+		// Setting default Output Properties
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+		
+		if(bsName != null &amp;&amp; bsName != &quot;&quot; &amp;&amp; inputMethod != null &amp;&amp; inputMethod != &quot;&quot;)
+		{
+			bsName.InvokeMethod(inputMethod, inputPSCopy, outputPS);
+			Outputs.AddChild(outputPS);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;Method ran successfully!&quot;);
+		}
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	}
+	
+	finally
+	{
+		outputPS = null;
+		inputPSCopy = null;
+		bsName = null;
+		inputMethod = null;
+		inputBS = null;
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="27"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/26/2023 09:37:01"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreCanInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreCanInvokeMethod (MethodName, &amp;CanInvoke)
+{
+	return (ContinueOperation);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
+			   SEQUENCE="29"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:55:14"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName:String, Inputs:PropertySet, Outputs:PropertySet)
+{
+	try
+	{
+		switch(MethodName)
+		{
+			case &quot;GetContactPreference&quot;:
+				GetContactPreference(Inputs, Outputs);
+				break;
+				
+			case &quot;GetEmployeeResponsibility&quot;:
+				GetEmployeeResponsibility(Inputs, Outputs);
+				break;
+				
+			case &quot;FindOpenOrder&quot;:
+				FindOpenOrder(Inputs, Outputs);
+				break;
+				
+			case &quot;GetAccContactDetails&quot;:
+				getAccContactDetails(Inputs, Outputs);
+				break;
+				
+			case &quot;FindOneClickEligiblility&quot;:
+				FindOneClickEligiblility(Inputs, Outputs);
+				break;
+				
+			case &quot;GetAccCustAddress&quot;:
+				getAccCustAddress(Inputs, Outputs);
+				break;
+				
+			case &quot;GetExtras&quot;:
+				getExtras(Inputs, Outputs);
+				break;
+				
+			case &quot;ReserveFirstNumber&quot;:
+				ReserveFirstNumber(Inputs, Outputs);
+				break;
+				
+			case &quot;NumberReserveMgmt&quot;:
+				NumberReserveMgmt(Inputs, Outputs);
+				break;
+				
+			case &quot;GetETFCharges&quot;:
+				GetETFCharges(Inputs, Outputs);
+				break;
+
+			case &quot;EAIQuery&quot;:
+				EAIQuery(Inputs, Outputs);
+				break;
+
+			case &quot;CheckLSP&quot;:
+				CheckLSP(Inputs, Outputs);
+				break;
+
+			case &quot;PortInValidations&quot;:
+				PortInValidations(Inputs, Outputs);
+				break;
+
+			case &quot;CreateCustomer&quot;:
+				CreateCustomer(Inputs, Outputs);
+				break;
+
+			case &quot;RSTTQuery&quot;:
+				RSTTQuery(Inputs, Outputs);
+				break;
+
+			case &quot;GetSRAdminDetails&quot;:
+				GetSRAdminDetails(Inputs, Outputs);
+				break;
+			
+			case &quot;BusCompOperation&quot;:
+				BusCompOperation(Inputs, Outputs);
+				break;
+
+			case &quot;ProductAvailabilityCheck&quot;:
+				ProductAvailabilityCheck(Inputs, Outputs);
+				break;
+
+			case &quot;OpenPopUpApplet&quot;:
+				OpenPopUpApplet(Inputs, Outputs);
+				break;
+
+			case &quot;RunBusinessService&quot;:
+				RunBusinessService(Inputs, Outputs);
+				break;
+
+			case &quot;ActivateService&quot;:
+				ActivateService(Inputs, Outputs);
+				break;
+
+			case &quot;CreateContact&quot;:
+				CreateContact(Inputs, Outputs);
+				break;
+
+			case &quot;UpdateContact&quot;:
+				UpdateContact(Inputs, Outputs);
+				break;
+				
+			// FBB start				
+			case &quot;OutboundRestUtility&quot;:		
+                OutboundRestUtility(Inputs, Outputs);	
+                break;
+					
+            case &quot;ParseJsonPropSet&quot;:	
+                ParseJsonPropSet(Inputs, Outputs);	
+                break;	
+
+            case &quot;ParseJsonPropSetHier&quot;:	
+                var x=0, iLoopCnt = Inputs.GetProperty(&quot;LoopCount&quot;);	
+                iLoopCnt = (iLoopCnt != &quot;&quot;) ? iLoopCnt : 0;	
+                Num = 0;	
+                while(x &lt;= ToNumber(iLoopCnt))	
+                {	
+                    ParseJsonPropSetHier(Inputs, Outputs);	
+                    x++;	
+                }	
+                Outputs.AddChild(Inputs.GetChild(0).Copy());	
+                Outputs.SetType(&quot;JsonPropSetHier&quot;);	
+                break;
+				// FBB end
+
+			default:
+				return(CancelOperation);
+		}
+		return(CancelOperation);
+	}
+
+	catch(e)
+	{
+		throw(e.toString());
+	}
+	return (ContinueOperation);
+}"
+			   SEQUENCE="30"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2019 22:55:14"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="UpdateContact"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function UpdateContact(Inputs: PropertySet, Outputs: PropertySet)
+{
+	try
+	{
+		// Fetching input arguments
+		var contactId: chars = Inputs.GetProperty(&quot;Contact Id&quot;);
+		var accountId: chars = Inputs.GetProperty(&quot;Account Id&quot;);
+		var firstName: chars = Inputs.GetProperty(&quot;First Name&quot;);
+		var lastName: chars = Inputs.GetProperty(&quot;Last Name&quot;);
+		var middleName: chars = Inputs.GetProperty(&quot;Middle Name&quot;);
+		var dob: chars = Inputs.GetProperty(&quot;DOB&quot;);
+		var emailAddress: chars = Inputs.GetProperty(&quot;Email Address&quot;);
+		var phoneNumber: chars = Inputs.GetProperty(&quot;Phone Number&quot;);
+		var endDate: chars = Inputs.GetProperty(&quot;Expiry Date&quot;);
+		var role: chars = Inputs.GetProperty(&quot;Role&quot;);
+		var contactReadOnly: chars = Inputs.GetProperty(&quot;ContactReadOnly&quot;);
+		
+		// Setting default Output Properties
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+		
+		// Setting BO &amp; BC properties
+		var cBO_Account: chars = &quot;Account&quot;;
+		var boAccount: BusObject = TheApplication().GetBusObject(cBO_Account);
+		var bcAccount: BusComp = boAccount.GetBusComp(&quot;Account&quot;);
+		var bcContact: BusComp = boAccount.GetBusComp(&quot;Contact&quot;);
+		var bcContactAffiliation = boAccount.GetBusComp(&quot;Account Contact Affiliation&quot;);
+		var bcContactAffiliationDtl = boAccount.GetBusComp(&quot;Account Contact Affiliation Detail&quot;);
+		
+		// Input validations
+		if(accountId == null || accountId == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;Account Id is mandatory&quot;);
+		}
+		if(contactId == null || contactId == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;Contact Id is mandatory&quot;);
+		}
+		if(firstName == null || firstName == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;First Name is mandatory&quot;);
+		}
+		if(lastName == null || lastName == &quot;&quot;)
+		{
+			TheApplication().RaiseErrorText(&quot;Last Name is mandatory&quot;);
+		}
+		
+		with(bcAccount)
+		{
+			SetViewMode(AllView);
+			ClearToQuery();
+			SetSearchExpr(&quot;[Id] = &apos;&quot;+accountId+&quot;&apos;&quot;);
+			ExecuteQuery(ForwardOnly);
+			if(FirstRecord())
+			{
+				with(bcContact)
+				{
+					SetViewMode(AllView);
+					ClearToQuery();
+					ActivateField(&quot;Date of Birth&quot;);
+					ActivateField(&quot;End Date&quot;);
+					SetSearchExpr(&quot;[Id] = &apos;&quot;+contactId+&quot;&apos;&quot;);
+					ExecuteQuery(ForwardOnly);
+					if(FirstRecord())
+					{
+						if(contactReadOnly == &quot;&quot; || contactReadOnly == null || contactReadOnly == &quot;N&quot;)
+						{
+							SetFieldValue(&quot;First Name&quot;, firstName);
+							SetFieldValue(&quot;Last Name&quot;, lastName);
+							SetFieldValue(&quot;Middle Name&quot;, middleName);
+							SetFieldValue(&quot;Date of Birth&quot;, dob);
+							SetFieldValue(&quot;Email Address&quot;, emailAddress);
+							SetFieldValue(&quot;Work Phone #&quot;, phoneNumber);
+						}
+						SetFieldValue(&quot;End Date&quot;, endDate);
+						WriteRecord();
+					}
+					else
+					{
+						TheApplication().RaiseErrorText(&quot;Provided Contact Id is not found in the system&quot;);
+					}
+					
+					with(bcContactAffiliation)
+					{
+						SetViewMode(AllView);
+						ClearToQuery();
+						SetSearchExpr(&quot;[Contact Id] = &apos;&quot;+contactId+&quot;&apos;&quot;);
+						ExecuteQuery(ForwardOnly);
+						if(FirstRecord())
+						{
+							with(bcContactAffiliationDtl)
+							{
+								if(FirstRecord())
+								{
+									SetFieldValue(&quot;Role&quot;, role);
+									WriteRecord();
+								}
+								else
+								{
+									NewRecord(NewAfter);
+									SetFieldValue(&quot;Role&quot;, role);
+									WriteRecord();
+								}
+							}
+						}
+						else
+						{
+							TheApplication().RaiseErrorText(&quot;No Contact Affiliation is found for the provided Contact Id&quot;);
+						}
+					}
+				}
+			}
+			else
+			{
+				TheApplication().RaiseErrorText(&quot;Provided Account Id is not found in the system&quot;);
+			}
+		}
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, &quot;Contact is updated successfully&quot;);
+	}
+	
+	catch(e)
+	{
+		//Outputs.SetProperty(&quot;Message&quot;, e);
+		throw(e);
+	}
+	
+	finally
+	{
+		bcContactAffiliationDtl = null;
+		bcContactAffiliation = null;
+		bcContact = null;
+		bcAccount = null;
+		boAccount = null;
+		cBO_Account = null;
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="28"
+			   UPDATED="08/14/2023 14:06:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/18/2023 09:03:35"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="getAccContactDetails"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function getAccContactDetails(Inputs:PropertySet, Outputs:PropertySet)
+{
+	var accountId:chars = Inputs.GetProperty(&quot;Account Id&quot;);
+	var cBO_AccBO:chars = &quot;TNZ CUT Invoice Sub Accounts&quot;;
+	var accountBO:BusObject = TheApplication().GetBusObject(&quot;TNZ CUT Invoice Sub Accounts&quot;);
+	var accountBC:BusComp = accountBO.GetBusComp(&quot;CUT Invoice Sub Accounts&quot;);
+	
+	//Setting O/P Prop
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+
+	try
+	{
+		if(accountId == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Account Id is Missing in the Request&quot;);
+		
+		with(accountBC)
+		{
+			SetViewMode(AllView);
+			ClearToQuery();
+			SetSearchSpec(&quot;Id&quot;, accountId);
+			ExecuteQuery(ForwardOnly);
+
+			if(!FirstRecord())
+				TheApplication().RaiseErrorText(&quot;Provided Account Details not found&quot;);
+			
+			else
+			{
+				var accountNumber = GetFieldValue(&quot;Account Number&quot;);
+				var email = GetFieldValue(&quot;TNZ Parent CUT Email Address&quot;)? GetFieldValue(&quot;TNZ Parent CUT Email Address&quot;): &quot;&quot;;
+				var phone = GetFieldValue(&quot;TNZ Parent CUT Work Phone # Cal&quot;)? GetFieldValue(&quot;TNZ Parent CUT Work Phone # Cal&quot;): &quot;&quot;;
+				if(email == &quot;&quot;)
+					email = GetFieldValue(&quot;TNZ  eBill Email&quot;)? GetFieldValue(&quot;TNZ  eBill Email&quot;): &quot;&quot;;
+				Outputs.SetProperty(&quot;Email&quot;, email);
+				Outputs.SetProperty(&quot;Phone&quot;, phone);
+				Outputs.SetProperty(&quot;Message&quot;, &quot;Account Details fetched successfully&quot;);
+			}
+		}
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+	}
+	
+	finally
+	{
+		accountBC = null;
+		accountBO = null;
+	}
+}"
+			   SEQUENCE="11"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="getAccCustAddress"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function getAccCustAddress(Inputs:PropertySet, Outputs:PropertySet)
+{
+ return (CancelOperation);
+}"
+			   SEQUENCE="12"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="getExtras"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function getExtras(Inputs:PropertySet, Outputs:PropertySet)
+{
+	var sSerialNumber:chars = Inputs.GetProperty(&quot;SerialNum&quot;);
+	var sAssetIntegId:chars = &quot;&quot;;
+	var currentRecord:bool = false;
+	var extrasCount:Number = 0;
+	var cBO_Asset:chars = &quot;Asset Management&quot;;
+	var assetBO:BusObject = TheApplication().GetBusObject(cBO_Asset);
+	var assetBC:BusComp = assetBO.GetBusComp(&quot;Asset Mgmt - Asset - Simple&quot;);
+	var searchPromoExpr:String = &quot;[Serial Number] = &apos;&quot;+ sSerialNumber +&quot;&apos; AND [Product Type] = &apos;Promotion&apos;&quot;;
+	var searchExtrasExpr:String = &quot;&quot;;
+	var psParentSet:PropertySet = TheApplication().NewPropertySet();
+	var psChildSet:PropertySet = TheApplication().NewPropertySet();
+	
+		//Setting O/P Props
+	Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;Y&quot;);
+	Outputs.SetProperty(&quot;Message&quot;, &quot;&quot;);
+	
+	try
+	{
+		if(sSerialNumber == &quot;&quot;)
+			TheApplication().RaiseErrorText(&quot;Serial Number is mandatory to fetch Extras&quot;);
+
+		with(assetBC)
+		{
+			SetViewMode(AllView);
+			ClearToQuery();
+			ActivateField(&quot;Integration Id&quot;);
+			SetSearchExpr(searchPromoExpr);
+			ExecuteQuery(ForwardOnly);
+			if(!FirstRecord())
+				TheApplication().RaiseErrorText(&quot;No Active/Suspended Line Found for the Serial Number Provided&quot;);
+			
+			sAssetIntegId = GetFieldValue(&quot;Integration Id&quot;);
+			ClearToQuery();
+		}
+		
+		with(assetBC)
+		{
+			InvokeMethod(&quot;SetAdminMode&quot;, &quot;TRUE&quot;);
+			ClearToQuery();
+			SetViewMode(AllView);
+			ActivateField(&quot;Product Part Number&quot;);
+			ActivateField(&quot;Product Name&quot;);
+			searchExtrasExpr = &quot;([TNZ Promotion Id] = &apos;&quot;+sAssetIntegId+&quot;&apos; AND [Prod Type] LIKE &apos;*Extra&apos;)&quot;;
+			SetSearchExpr(searchExtrasExpr);
+			ExecuteQuery(ForwardOnly);
+			if(!FirstRecord())
+				TheApplication().RaiseErrorText(&quot;No Active/Suspended Extras found for the Line Number&quot;);
+			
+			currentRecord = FirstRecord();
+			psParentSet.SetType(&quot;Extras&quot;);
+			while(currentRecord)
+			{
+				psChildSet = TheApplication().NewPropertySet();
+				psChildSet.SetType(&quot;Extra&quot;);
+				psChildSet.SetProperty(&quot;PartNumber&quot;,GetFieldValue(&quot;Product Part Number&quot;));
+				psChildSet.SetProperty(&quot;ProductName&quot;,GetFieldValue(&quot;Product Name&quot;));
+				psParentSet.AddChild(psChildSet);
+				psChildSet = null;
+				currentRecord = NextRecord();
+				extrasCount += 1;
+			}
+			Outputs.AddChild(psParentSet);
+			Outputs.SetProperty(&quot;Message&quot;, &quot;Extras Fetched Successfully. Total number of Extras found: &quot; +extrasCount);
+		}
+	}
+	
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;SuccessFlag&quot;, &quot;N&quot;);
+		Outputs.SetProperty(&quot;Message&quot;, e.toString());
+	}
+	
+	finally
+	{
+		assetBC = null;
+		assetBO = null;
+		psParentSet = null;
+	}
+}"
+			   SEQUENCE="16"
+			   UPDATED="08/01/2023 11:43:49"
+			   UPDATED_BY="SADMIN"
+			   CREATED="11/08/2019 15:15:27"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+
